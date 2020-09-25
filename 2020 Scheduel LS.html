@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+        
+         div.fileinputs {
+	position: absolute;
+             top: 1500px;
+             left: 315px;
+             height: 40px;
+             width: 30px;
+             z-index: 0;
+             
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+        position: absolute;
+            top: 1500px;
+    left: 30px;
+          
+    
+}
+        /*\
+        .Choose_Img{
+            background-color: black;
+            color: red;
+            position:absolute;
+            height: 130px;
+            position:absolute;
+            left: 0px;
+        width: 880px;
+            font-size: 90px;
+            font-family: Cyberway;
+            border-style: solid;
+			border-width: 10px;
+			border-color: white;	
+             
+            
+                
+        
+        }
+        */
+
+input.file {
+   
+           
+	/*position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    */
+}
+		
+		body{
+          
+            background-image: linear-gradient(180deg,black,gray);
+            background-repeat: no-repeat;
+             background-attachment: fixed;
+      background-position: center;
+            
+			/*border-style: solid;
+			border-top-color: #5f5c79;
+			border-top-width: 10px;
+			
+			background-image: url(backgroundhome.gif);
+			background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+			
+		background-size: 1000px 1300px;
+		background-color: #5f5c79;
+			
+			/*border-bottom-style: solid;
+			border-bottom
+			border-bottom-color: #724034;
+			border-bottom-style: solid;
+			border-bottom-width: 404px;
+			*/
+		}
+		.border
+        {/*
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 410px solid #724034;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+            */
+}
+	
+		.class_input{
+			border-style: solid;
+			border-width: 10px;
+			border-color: red;
+		
+		}
+		th{
+		border-style: solid;
+			border-width: 10px;
+			border-color: red;	
+			
+		}
+		
+		
+		
+		
+		
+		@font-face {
+			font-family: Pixel; src: url('PixelEmulator-xq08.ttf'); }
+		
+		@font-face {
+			font-family: Old Oak ; src: url("OldOak-apWj.ttf"); }
+        @font-face {
+			font-family: Cyberway ; src: url( "CyberwayRiders-lg97d.ttf"); }
+       
+		.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+		
+			
+		
+		
+		
+		
+		.coral{
+			color: red;
+			text-align: center;
+			vertical-align: text-bottom;
+		}
+		.Start{
+			width: 400px;
+			height: 200px;
+			font-size: 100px;
+			text-align: center;
+			color: ghostwhite;
+			background-color: red;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+			border: 10px solid #434343;
+			
+			
+			
+		}
+		.Start_positionX{
+			text-align: center;
+		
+			
+		}
+		.Start_positionY{
+		position: absolute;
+			top: 1400px;
+				left: 300px;
+			
+		}
+		.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+			
+			
+ 
+  overflow-y: hidden;
+			
+  transition: 1s;
+            
+            
+			
+			
+			/*background-image:
+				url(pixel-landscape.png),
+				linear-gradient(180deg, #ff8377 50%,#b12137  50%);
+			
+			background-repeat: no-repeat;
+				
+			 
+			
+ background-position: center,center;
+			
+			background-size:1000px 900px, cover*/
+			background-image: linear-gradient(180deg,gray,white)
+                
+				;
+			 
+		
+			
+			
+				
+			
+			
+			
+		}
+/*.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}*/
+
+.overlay form {
+	
+  padding: 8px;
+  text-decoration: none;
+  font-size: 130px;
+	text-align: center;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+
+  
+	
+		
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+        
+        .profileLabel{
+            
+          position: absolute;
+            top: 1230px;
+            left:140px ;
+            font-size: 85px;
+            
+            
+            
+            
+        }
+        .profileImg{
+            
+          position: absolute;
+            top: 1300px;
+            left:340px ;  
+           
+            
+            
+            
+            
+        }
+	
+		.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+		
+		.Name_Ask{
+			height:50px ;
+            position: absolute;
+            top: 100px;
+            left: 260px;
+			
+		}	
+		.Character{
+			color: black;
+            font-size: 100px;
+            position: absolute;
+            top: 20px;
+            left: 240px;
+        }
+          .Start_buttonLogin{
+			position: absolute;
+              top: 1800px;
+              left: 20px;
+              width: 900px;
+              height: 100px;
+              font-size: 80px;
+              font-family: Cyberway;
+              background-color: red;
+              color: aliceblue;
+              border-style: solid;
+              border-width: 7px;
+              border-color: black;
+            }
+                
+		
+		
+	table, th,	td {
+		
+		/*padding: 10px;*/
+        border-collapse: collapse;
+		
+			
+		}
+		
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+				
+		
+	</style>
+	</head>
+	<body>
+		
+		
+<div class="border"></div>
+
+
+		
+	<div id="myNav" class="overlay" style="border-top:">
+ 
+  <div class="overlay-content">
+      
+      <h1 style="font-family: Cyberway;" for="name" class="Character" >Your Name:</h1>
+	
+    <form id="nombre">
+  
+		
+  <input class="Name_Ask"  type="text" id="n" name="name" ><br>
+		
+		
+		
+		
+</form>
+		  
+		  
+	
+		  <h1 style="position: absolute;top: 540px;left: 180px;font-size: 90px;font-family: Cyberway">Set your scheduel:</h1>
+	  <form id="scheduel"></form>
+	  <table style="width:100%;position: absolute;top: 800px;font-size: 40px;font-family: Cyberway">
+		  
+		  
+	  <tr>
+		 <th>M</th> 
+		  <th>T</th>
+		  <th>W</th>
+		  <th>Th</th>
+		  <th>F</th>
+		 
+		  </tr>
+		
+		  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday1" name="monday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday1" name="tuesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday1" name="wednesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday1" name="thursday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday1" name="friday1" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday2" name="monday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday2" name="tuesday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday2" name="wednesday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday2" name="thursday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday2" name="friday2" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday3" name="monday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday3" name="tuesday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday3" name="wednesday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday3" name="thursday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday3" name="friday3" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday4" name="monday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday4" name="tuesday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday4" name="wednesday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday4" name="thursday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday4" name="friday4" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday5" name="monday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday5" name="tuesday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday5" name="wednesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday5" name="thursday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday5" name="friday5" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+	  
+	  
+	  
+	  
+	  
+	  </table>
+      <h1 class="profileLabel"  style="font-family: Cyberway" >Chosse profile image:</h1>
+     
+
+<div class="fileinputs">
+    s
+	<input type="file" id="file" style="width: 500;" class="file" maxlength="40" size="40">
+    
+	<div class="fakefile">
+
+		
+	</div>
+</div>
+	  
+	 
+	
+	  
+	  <button class = "Start_buttonLogin" onclick="startLogIn()">Start ! ! !</button>
+      
+
+      
+  </div>
+		
+</div>
+		
+	<h1 style=" font-family: Pixel;font-size: 200px;" class="coral" id = "Start">Hello</h1>
+		<div class="Start_positionY">
+		<p class="Start_positionX">
+			
+		<button id="Startbh" class="Start" onclick="Start()" style="font-family: Pixel; ">Setup</button>
+		</p>
+		</div>
+		
+		
+		
+		<p>d</p>
+		
+		
+		
+		
+		
+		
+	
+		<script>
+           console.log(document.getElementById("friday1"));
+            
+            
+			
+			function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+     function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}       
+			
+			function openSideNav() {
+				
+  document.getElementById("mySidenav").style.width = "100%";
+}
+			function closeSideNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+			
+	
+			
+		 
+			
+			
+			
+	
+		function startLogIn(){
+			
+			console.log("Start login activated")
+			
+		var nombrePreValue =	document.getElementById("n")
+		
+		var nombrePreLocal = nombrePreValue.value;
+			console.log(nombrePreValue)
+			
+			
+			localStorage.name = nombrePreLocal;
+			
+			var lunesprimerPreValue =	document.getElementById("monday1")
+		
+		var lunesprimerPreLocal = lunesprimerPreValue.value;
+			console.log(lunesprimerPreValue)
+			console.log(lunesprimerPreLocal)
+			console.log(document.getElementById("monday1"))
+			var lunessegundoPreValue =	document.getElementById("monday2")
+		
+		var lunessegundoPreLocal = lunessegundoPreValue.value;
+			console.log(lunessegundoPreValue)
+			console.log(lunessegundoPreLocal)
+			console.log(document.getElementById("monday2"))
+			
+			var lunestercerPreValue =	document.getElementById("monday3")
+		
+		var lunestercerPreLocal = lunestercerPreValue.value;
+			console.log(lunestercerPreValue)
+			console.log(lunestercerPreLocal)
+			console.log(document.getElementById("monday3"))
+			
+			var lunescuartoPreValue =	document.getElementById("monday4")
+		
+		var lunescuartoPreLocal = lunescuartoPreValue.value;
+			console.log(lunescuartoPreValue)
+			console.log(lunescuartoPreLocal)
+			console.log(document.getElementById("monday4"))
+			
+			var lunesquintoPreValue =	document.getElementById("monday5")
+		
+		var lunesquintoPreLocal = lunesprimerPreValue.value;
+			console.log(lunesquintoPreValue)
+			console.log(lunesquintoPreLocal)
+			console.log(document.getElementById("monday5"))
+			
+			
+				var martesprimeroPreValue = document.getElementById("tuesday1")
+		var martesprimeroPreLocal = martesprimeroPreValue.value;
+			console.log(martesprimeroPreValue)
+			console.log(martesprimeroPreLocal)
+			console.log(document.getElementById("tuesday1"))
+			
+			
+				var martessegundoPreValue =	document.getElementById("tuesday2")
+		
+		var martessegundoPreLocal = martessegundoPreValue.value;
+			console.log(martessegundoPreValue)
+			console.log(martessegundoPreLocal)
+			console.log(document.getElementById("tuesday2"))
+			document.getElementById("tuesday3")
+            
+            var martesterceroPreVal = document.getElementById("tuesday3");
+			var martesterceroPrelocal = martesterceroPreVal.value;
+            
+			
+				console.log(martesterceroPrelocal)
+            console.log(martesterceroPreVal)
+			
+			var martescuartoPreVal = document.getElementById("tuesday4");
+			var martescuartoPrelocal = martescuartoPreVal.value;
+            
+            var martesquintoPreVal = document.getElementById("tuesday5");
+			var martesquintoPrelocal = martesquintoPreVal.value;
+            
+            var miercolesprimeroPreVal = document.getElementById("wednesday1");
+			var miercolesprimeroPrelocal = miercolesprimeroPreVal.value;
+            
+             var miercolessegundoPreVal = document.getElementById("wednesday2");
+			var miercolessegundoPrelocal = miercolessegundoPreVal.value;
+             
+            
+          
+            
+            
+             var miercolesterceroPreVal = document.getElementById("wednesday3");
+			var miercolesterceroPrelocal = miercolesterceroPreVal.value;
+            
+            var fullPath = document.getElementById('file').value;
+           console.log(fullPath)
+            
+            
+if (fullPath) {
+    var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+    var filename = fullPath.substring(startIndex);
+    if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+        filename = filename.substring(1);
+    }
+    console.log(filename);
+}
+            
+            console.log(document.getElementById("tuesday3"))
+            
+            
+             var miercolescuartoPreVal = document.getElementById("wednesday4");
+			var miercolescuartoPrelocal = miercolescuartoPreVal.value;
+            
+            
+            
+             var miercolesquintoPreVal = document.getElementById("wednesday5");
+			var miercolesquintoPrelocal = miercolesquintoPreVal.value;
+            //K
+            
+            
+            
+            
+             var miercolesprimeroKPreVal = document.getElementById("monday1");
+			var miercolesprimeroKPrelocal = miercolesprimeroKPreVal.value;
+            
+             var miercolessegundoKPreVal = document.getElementById("monday2");
+			var miercolessegundoKPrelocal = miercolessegundoKPreVal.value;
+             
+            
+          
+            
+            
+             var miercolesterceroKPreVal = document.getElementById("monday3");
+			var miercolesterceroKPrelocal = miercolesterceroKPreVal.value;
+            
+            
+             
+             var miercolescuartoKPreVal = document.getElementById("monday4");
+			var miercolescuartoKPrelocal = miercolescuartoKPreVal.value;
+            
+            
+            
+             var miercolesquintoKPreVal = document.getElementById("monday5");
+			var miercolesquintoKPrelocal = miercolesquintoKPreVal.value;
+            
+            
+            
+            
+            
+            //K
+            
+            
+            
+            
+            
+            
+            
+             var juevesprimeroPreVal = document.getElementById("thursday1");
+			var juevesprimeroPrelocal = juevesprimeroPreVal.value;
+            
+            
+             var juevessegundoPreVal = document.getElementById("thursday2");
+			var juevessegundoPrelocal = juevessegundoPreVal.value;
+            
+            var profilePreVal = 
+                document.getElementById("file");
+            var profilePrelocal = 
+                profilePreVal.value;
+            
+            
+             var juevesterceroPreVal = document.getElementById("thursday3");
+			var juevesterceroPrelocal = juevesterceroPreVal.value;
+            
+            
+            
+             var juevescuartoPreVal = document.getElementById("thursday4");
+			var juevescuartoPrelocal = juevescuartoPreVal.value;
+            
+            
+            
+             var juevesquintoPreVal = document.getElementById("thursday5");
+			var juevesquintoPrelocal = juevesquintoPreVal.value;
+            
+            var viernesprimerPreVal = document.getElementById("friday1");
+            
+            
+			var viernesprimerPrelocal = viernesprimerPreVal.value;
+            
+            console.log(viernesprimerPrelocal)
+            console.log(viernesprimerPreVal)
+             
+            
+            
+             var viernessegundoPreVal = document.getElementById("friday2");
+            
+            
+			var viernessegundoPrelocal = viernessegundoPreVal.value;
+            
+            
+            
+            
+             var viernesterceroPreVal = document.getElementById("friday3");
+			var viernesterceroPrelocal = viernesterceroPreVal.value;
+            
+            
+            
+            
+            
+             var viernescuartoPreVal = document.getElementById("friday4");
+			var viernescuartoPrelocal = viernescuartoPreVal.value;
+            
+            
+            
+            
+             var viernesquintoPreVal = document.getElementById("friday5");
+			var viernesquintoPrelocal = viernesquintoPreVal.value;
+            
+            
+            
+            
+            
+			
+			
+			
+			
+			
+			
+			
+		
+				
+		localStorage.profileImg = 
+            filename;
+			
+            localStorage.lunesPrimer = lunesprimerPreLocal;
+		localStorage.lunesSegundo  = lunessegundoPreLocal;
+		 localStorage.lunesTercero =lunestercerPreLocal;
+		localStorage.lunesCuarto  = lunescuartoPreLocal;
+		localStorage.lunesQuinto =lunesquintoPreLocal; 
+			localStorage.martesPrimer  =
+                martesprimeroPreLocal;
+		localStorage.martesSegundo =
+            martessegundoPreLocal;
+        localStorage.martesTercero = martesterceroPrelocal;
+		localStorage.martesCuarto =
+             martescuartoPrelocal;
+		localStorage.martesQuinto =
+            martesquintoPrelocal;
+			localStorage.miercolesPrimer = 
+                miercolesprimeroPrelocal;
+		localStorage.miercolesSegundo =
+            miercolessegundoPrelocal;
+		 localStorage.miercolesTercero  = 
+             miercolesterceroPrelocal;
+		localStorage.miercolesCuarto =
+            miercolescuartoPrelocal;
+		localStorage.miercolesQuinto=
+            miercolesquintoPrelocal;
+			localStorage.juevesPrimer=
+                juevesprimeroPrelocal;
+		localStorage.juevesSegundo =
+            viernessegundoPrelocal;
+		 localStorage.juevesTercero=
+              juevesterceroPrelocal;
+		localStorage.juevesCuarto =
+             juevescuartoPrelocal;
+            
+		localStorage.juevesQuinto =
+             juevesquintoPrelocal;
+            
+			localStorage.veiernesPrimer = 
+                viernesprimerPrelocal;
+           
+		localStorage.viernesSegundo =
+            viernessegundoPrelocal;
+		 localStorage.viernesTercero =
+             viernesterceroPrelocal;
+		localStorage.viernesCuarto =
+            viernescuartoPrelocal;
+		localStorage.viernesQuinto =
+            viernesquintoPrelocal;
+            		localStorage.miercolesPrimerK=
+            lunesprimerPreLocal;
+            
+            localStorage.miercolesSegundoK=
+            lunessegundoPreLocal;
+            
+            localStorage.miercolesTerceroK=
+            lunestercerPreLocal;
+            
+            localStorage.miercolesCuartoK=
+           lunescuartoPreLocal;
+            
+            localStorage.miercolesQuintoK=
+             lunesquintoPreLocal;
+            
+            
+    
+            
+            
+            
+            
+            
+            
+           
+          Profile()
+            
+                
+             closeNav()
+          
+			
+         
+	
+		}
+            
+            function Profile(){
+                
+               window.location.href='MSCQ.html'
+                /*document.getElementById("Start").style.visibility = "hidden"
+             document.getElementById( "Startbh").style.visibility = "hidden"*/
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            }
+             
+		  
+			
+			function Start(){
+                
+				openNav()
+				
+				
+				}
+			
+		
+		
+			
+		var hoy = new Date()
+	     var diaDeSemana = hoy.getDay()
+		 var hora = hoy.getHours
+		 var min = hoy.getMinutes
+		 
+		 
+		
+		 switch (diaDeSemana){
+			 case 0 :
+				 
+				 break;
+			 case 6:
+				 
+				 break;
+			 case 1:
+			  switch (hora){
+				 case 8:
+					 
+					 if(min => 23){
+						 
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=29){
+						
+					 }
+					 if(min>=33){
+						
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						 
+					 }
+					 if(min>=42){
+						 
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						 
+					 }
+					 if(min>=46){
+						 
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						 
+					 }
+					 if(min>=50){
+						
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						
+					 }
+					 if(min>=55){
+						 
+					 }
+					 break;
+				 case 14:
+				
+					 break
+				 case 15:
+					
+					 break;	 
+			 }
+				 
+			 break;
+				 case 2:
+			  switch (hora){
+				 case 8:
+					 
+					 if(min => 23){
+						 
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=29){
+						
+					 }
+					 if(min>=33){
+						
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						 
+					 }
+					 if(min>=42){
+						 
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						 
+					 }
+					 if(min>=46){
+						 
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						 
+					 }
+					 if(min>=50){
+						
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						
+					 }
+					 if(min>=55){
+						 
+					 }
+					 break;
+				 case 14:
+				
+					 break
+				 case 15:
+					
+					 break;	 
+			 }
+				 
+			 break;
+				 case 3:
+			  switch (hora){
+				 case 8:
+					 
+					 if(min => 23){
+						 
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=29){
+						
+					 }
+					 if(min>=33){
+						
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						 
+					 }
+					 if(min>=42){
+						 
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						 
+					 }
+					 if(min>=46){
+						 
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						 
+					 }
+					 if(min>=50){
+						
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						
+					 }
+					 if(min>=55){
+						 
+					 }
+					 break;
+				 case 14:
+				
+					 break
+				 case 15:
+					
+					 break;	 
+			 }
+				 
+			 break;
+				 case 4:
+			  switch (hora){
+				 case 8:
+					 
+					 if(min => 23){
+						 
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=29){
+						
+					 }
+					 if(min>=33){
+						
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						 
+					 }
+					 if(min>=42){
+						 
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						 
+					 }
+					 if(min>=46){
+						 
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						 
+					 }
+					 if(min>=50){
+						
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						
+					 }
+					 if(min>=55){
+						 
+					 }
+					 break;
+				 case 14:
+				
+					 break
+				 case 15:
+					
+					 break;	 
+			 }
+				 
+			 break;
+				 case 5:
+			  switch (hora){
+				 case 8:
+					 
+					 if(min => 23){
+						 
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=29){
+						
+					 }
+					 if(min>=33){
+						
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						 
+					 }
+					 if(min>=42){
+						 
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						 
+					 }
+					 if(min>=46){
+						 
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						 
+					 }
+					 if(min>=50){
+						
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						
+					 }
+					 if(min>=55){
+						 
+					 }
+					 break;
+				 case 14:
+				
+					 break
+				 case 15:
+					
+					 break;	 
+			 }
+				 
+			 break;
+			 
+				 
+		 }
+		 
+		</script>
+	</body>
+
+</html>
