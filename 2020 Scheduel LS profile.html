@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  align-items: center;
+  background-color: #d8deeb;
+  display: flex;
+  font-family: "Open Sans";
+  font-weight: 800;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone {
+  align-items: center;
+  background-color: #4947b1;
+  border-radius: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  height: 2100px;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.background {
+  position: absolute;
+    
+}
+
+.sheet {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  cursor: grab;
+  height: 120%;
+  position: absolute;
+  width: 100%;
+  will-change: transform;
+    top: 1600px;
+}
+
+.top-sheet {
+  background-color: #eff0f2;
+}
+
+.top-sheet-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin: 32px 0 0 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.top-sheet-card {
+  border-radius: 16px;
+  box-shadow: 0 1.1px 3.6px rgba(0, 0, 0, 0.044),
+    0 3px 10px rgba(0, 0, 0, 0.048), 0 7.2px 24.1px rgba(0, 0, 0, 0.047),
+    0 24px 80px rgba(0, 0, 0, 0.06);
+  margin-left: 20px;
+  margin-top: 24px;
+}
+
+.top-sheet-card:first-child {
+  margin-top: 32px;
+}
+
+.bottom-sheet {
+  background-color: #fff;
+}
+
+.bottom-sheet-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin: 32px 0 0 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+    .avatar {
+  border-radius: 50%;
+  margin-top: 120px;
+  transform-origin: 50% 0;
+  width: 100px;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+}
+
+.bottom-sheet-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 48px;
+}
+
+.bottom-sheet-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.bottom-sheet-transaction {
+  background-color: #eff0f2;
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 12px;
+  width: 40px;
+}
+
+.bottom-sheet-transaction-descr {
+  font-weight: 400;
+  font-size: 10px;
+  margin-right: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.bottom-sheet-transaction-amount {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-left: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-top: 120px;
+  transform-origin: 50% 0;
+  width: 100px;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+}
+
+.name {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  top: 236px;
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance {
+  font-family: Open Sans;
+  height: 0;
+  left: 42px;
+  position: relative;
+  top: -62px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance-title {
+  font-weight: 400;
+  font-size: 14px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance-white {
+  color: white;
+}
+
+.balance-amount {
+  font-weight: 700;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+<style type="text/css"></style></head>
+<body translate="no">
+<div id="root"><div class="App"><div class="phone"><svg xmlns="" viewBox="0 0 260 350" height="350" width="260" class="background"><rect width="4.789" height="4.789" x="123.66" y="-26.417" ry="0" transform="rotate(45)" fill="none" stroke="bisque" stroke-width="1.211" stroke-linecap="square" visibility="hidden"></rect></svg><img class="avatar" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+    
+    
+    
+    
+    <div class="name">Sonja Marquez</div><div class="sheet top-sheet" style="transform: translate3d(0px, 320px, 0px);"><div class="top-sheet-title">My cards</div></div></div><div class="sheet bottom-sheet" style="transform: translate3d(0px, 399.923px, 0px);"><div class="bottom-sheet-title">Transactions</div></div></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@react-spring/web@9.0.0-rc.3/index.umd.js"></script>
+<script src="https://odintsov.me/static/libs/react-use-gesture.js"></script>
+<script id="rendered-js">
+function _extends() {_extends = Object.assign || function (target) {for (var i = 1; i < arguments.length; i++) {if (window.CP.shouldStopExecution(0)) break;var source = arguments[i];for (var key in source) {if (Object.prototype.hasOwnProperty.call(source, key)) {target[key] = source[key];}}}window.CP.exitedLoop(0);return target;};return _extends.apply(this, arguments);}const { useState, useEffect } = React;
+const { useSpring, animated, config } = ReactSpring;
+const { useDrag } = ReactUseGesture;
+
+const TOP_THRESHOLD = 190;
+const BOTTOM_THRESHOLD = 241;
+
+function MasterCard() {
+  return (
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 220 120",
+      height: "120",
+      width: "220",
+      className: "top-sheet-card" },
+
+    React.createElement("defs", null,
+    React.createElement("linearGradient", {
+      id: "a",
+      gradientTransform: "scale(447.26553) rotate(-20.218 .69 .902)",
+      gradientUnits: "userSpaceOnUse",
+      x2: "1" },
+
+    React.createElement("stop", { offset: "0", stopColor: "#f96" }),
+    React.createElement("stop", { offset: "1", stopColor: "#ff5e62",visibility:"hidden", }))),
+
+
+    React.createElement("rect", {
+      ry: "0",
+      y: ".659",
+      x: "-.659",
+      height: "119.223",
+      width: "220.002",
+      fill: "url(#a)",
+        visibility:"hidden"
+    
+    }),
+
+    React.createElement("path", {
+      d: "M27.76 16.435A11.76 11.214 0 0 0 16 27.65a11.76 11.214 0 0 0 11.76 11.213 11.76 11.214 0 0 0 6.203-1.688 13.85 12.98 0 0 1-4.63-9.686 13.85 12.98 0 0 1 4.408-9.496 11.76 11.214 0 0 0-5.98-1.56z",
+      fill: "#fff",
+        visibility:"hidden"
+    }),
+
+    React.createElement("ellipse", { ry: "11.214", rx: "11.761", cy: "27.649", cx: "44.369", fill: "#fff",visibility:"hidden" }),
+    
+
+    React.createElement("path", {
+      d: "M184.752 68.218c.07.497.26.382-.588.784-.85.403-3.622.015-4.657-.196-1.035-.21-1.198-.254-1.568-.588-.372-.333-.46-.63-.59-1.176-.13-.547-.133-1.618 0-2.06.134-.44.078-.358.393-.587.315-.23 1.328-.087 1.568-.44.24-.355.244-.6-.097-.932-.34-.332-.997.21-1.91-.147-.573-1.19-.568-2.07-.1-3.48 1.106-.33 4.426-.237 5.735-.148.33 1.56.233 2.47.05 3.53-1.067.322-2.02.04-2.353.44-.334.402-.282.414 0 .736.28.322 1.23-.28 1.813.245.583.523.237 2.11.686 2.793.45.683 1.548.728 1.618 1.225zM182.107 58.106c.38 0 .485-.306.498-.654.013-.35-.158-1.577.21-2.172.365-.595 1.447-.66 1.7-1.072.252-.414.338-.436.078-.89-.226-.394-3.772-.063-4.92-.026-1.146.037-1.476.34-1.935.785-.46.444-.667.945-.706 1.596-.04.65-.08 1.11-.026 1.726.053.615-.037.755.523.89.412.098 3.756-.184 4.577-.184zM195.937 62.98c.77-.364.365-.128.572-.723.205-.596.27-2.31 0-2.86-.273-.548-.372-.414-.65-.495-.277-.08-.6.006-1.13-.007-.015-.36-.01-.267-.037-.73.546-.06 1.105-.062 1.396-.178.29-.115.254.054.495-.495.24-.55.387-2.22.114-2.897-.273-.678.046-.546-1.068-1.03s-4.718-.477-5.794-.305c-1.076.173-.615-.073-.687.267-.07.34.47.338.954.953.486.615 1.44 2.245 1.754 2.86.315.613.034.55.305.724.27.173.536.173 1.144.128.046.41.02.287 0 .66-.63-.032-1.378-.154-1.792.05-.414.204-.422.212-.61.763-.19.55-.21 1.97.038 2.516.247.547-.017.402.8.725.818.323 3.423.44 4.194.076zM191.71 64.11c-.38 0-.484.306-.497.654-.013.35.157 1.577-.21 2.172-.366.595-1.448.66-1.7 1.073-.252.412-.34.434-.08.888.227.395 3.773.064 4.92.026 1.147-.037 1.477-.34 1.936-.785.458-.445.666-.946.705-1.597.04-.65.08-1.11.026-1.726-.052-.615.038-.755-.522-.89-.413-.1-3.757.183-4.578.183z",
+      fill: "#fff",visibility:"hidden" })));
+
+
+
+}
+
+function Visa() {
+  return (
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "220",
+      height: "120",
+      viewBox: "0 0 220 120",
+      className: "top-sheet-card" },
+
+    React.createElement("path", {
+      d: "M187.763 68.197c-.616.06-.864-.848-1.47-1.57-.607-.72-2.028-1.987-2.108-2.793-.08-.805.38-.336.588-1.225.208-.89.31-3.234.05-4.118-.263-.884-.785-.293-.785-1.177 0-.883 1.562-2.443 2.157-3.235.594-.79.577-1.547 1.323-1.568.746-.02 1.037 1.018 1.667 1.765.63.746 2.088 1.86 2.058 2.744-.03.885-.912.56-1.225 1.423-.314.862-.247 2.737.05 3.627.295.89 1.208.594 1.175 1.617-.033 1.023-2.088 2.416-2.647 3.186-.558.77-.217 1.265-.833 1.324z",
+      fill: "#ccc" }),
+
+    React.createElement("path", {
+      d: "M185.41 67.56c.07.496.262.38-.588.784-.85.402-3.62.014-4.656-.196-1.035-.21-1.198-.255-1.57-.59-.37-.332-.458-.628-.587-1.175-.13-.547-.134-1.617 0-2.058.133-.442.076-.36.39-.59.316-.228 1.33-.086 1.57-.44s.243-.6-.098-.93c-.34-.333-.997.21-1.912-.148-.57-1.19-.566-2.07-.098-3.48 1.106-.33 4.425-.237 5.735-.147.33 1.56.233 2.47.05 3.53-1.067.322-2.02.04-2.354.44-.333.4-.28.413 0 .735.282.322 1.23-.28 1.814.245.583.525.237 2.11.686 2.794.45.683 1.548.73 1.617 1.225zM182.766 57.447c.38 0 .484-.306.497-.654.013-.35-.157-1.577.21-2.172.366-.593 1.448-.658 1.7-1.07.252-.414.338-.436.08-.89-.227-.395-3.773-.064-4.92-.027-1.147.038-1.477.34-1.936.785-.46.445-.668.945-.706 1.596-.038.65-.08 1.11-.025 1.727.053.616-.037.756.523.89.413.1 3.757-.182 4.578-.183zM196.596 62.322c.77-.364.365-.128.57-.724.208-.595.273-2.31 0-2.86-.27-.548-.37-.413-.647-.494-.278-.082-.6.005-1.13-.008-.017-.358-.012-.267-.038-.73.546-.06 1.104-.062 1.396-.177.292-.117.255.053.496-.497.24-.55.386-2.22.114-2.897-.272-.678.046-.546-1.067-1.03-1.113-.483-4.718-.477-5.794-.304-1.076.172-.615-.073-.686.266-.07.34.468.338.953.953.485.617 1.438 2.247 1.754 2.86.315.614.034.55.305.725.27.173.536.173 1.143.13.047.407.02.286 0 .658-.63-.032-1.378-.154-1.79.05-.415.205-.423.212-.61.763-.19.55-.21 1.97.037 2.516s-.017.4.8.724c.818.324 3.423.44 4.194.076zM192.368 63.452c-.378 0-.484.305-.497.654-.012.348.158 1.576-.208 2.17-.367.596-1.448.66-1.7 1.074-.253.413-.34.435-.08.89.226.394 3.772.063 4.92.026 1.146-.038 1.476-.34 1.935-.785.46-.444.668-.945.707-1.595.038-.65.08-1.112.026-1.727-.054-.615.036-.755-.523-.89-.413-.098-3.757.183-4.58.184z",
+      fill: "#ccc" }),
+
+    React.createElement("path", {
+      d: "M13.376 17.168c.95-.49 2.035-.292 3.055-.31 2.337.06 4.678-.058 7.014.046 1.053-.005 1.956.872 2.102 1.895.733 3.563 1.405 7.14 2.125 10.715-1.19-4.187-4.33-7.605-8.02-9.78-1.95-1.173-4.127-1.856-6.275-2.568z",
+      fill: "#f4a929" }),
+
+    React.createElement("path", {
+      d: "M60.372 16.467c-2.53-.126-5.07.375-7.203 1.78h-.003c-2.35 1.534-3.812 4.707-2.707 7.417.887 2.146 3.018 3.342 4.998 4.318 1.02.57 2.33 1.11 2.627 2.367.08 1.055-.847 1.795-1.745 2.097-2.645.59-5.4-.028-7.775-1.26-.296 1.65-.54 3.31-.832 4.96 2.745 1.135 5.797 1.32 8.727 1.013 2.59-.348 5.25-1.566 6.632-3.89 1.308-2.2 1.377-5.37-.543-7.25-1.654-1.966-4.422-2.376-6.18-4.18-.856-.963.157-2.246 1.187-2.49 2.182-.562 4.524-.133 6.53.833.284-1.617.557-3.24.732-4.875-1.417-.466-2.93-.766-4.448-.84zm-18.33.388l-.002.002c-1.146 7.387-2.43 14.75-3.52 22.143 1.898.005 3.794.005 5.688 0 1.143-7.387 2.375-14.762 3.545-22.145-1.904.015-3.807.015-5.71 0zm-8.342.012c-1.86 5.035-3.727 10.07-5.57 15.11-.155-.82-.28-1.652-.46-2.462-1.19-4.187-4.33-7.604-8.02-9.78 1.734 6.414 3.364 12.854 5.114 19.26 1.974 0 3.95-.028 5.924.034 3.14-7.342 6.008-14.793 9.084-22.163-2.023.014-4.044.024-6.07 0zm43.142.012c-.876-.008-1.754-.004-2.63.057-1.188.06-1.94 1.17-2.32 2.188-2.75 6.638-5.533 13.26-8.288 19.894 1.994-.006 3.988-.005 5.98-.005.42-1.107.823-2.224 1.213-3.34 2.436.013 4.87.006 7.31.006.225 1.12.46 2.23.71 3.34 1.758-.005 3.516-.004 5.273-.008-1.54-7.374-3.056-14.753-4.62-22.125-.875.016-1.75-.002-2.628-.008zm-1.263 5.993c.35 2.782 1.04 5.507 1.61 8.25-1.58 0-3.154 0-4.734-.004 1.063-2.74 1.933-5.56 3.123-8.247z",
+      opacity: ".98",
+      fill: "#1b4da2" })));
+
+
+
+}
+
+function TopSheet({ y, set, onActive, onProgress }) {
+  const [expanded, setExpanded] = useState(false);
+  const bind = useDrag(
+  ({ movement: [x, y], down, tap }) => {
+    if (!down && tap) {
+      if (expanded) {
+        set({ y: 320, config: { duration: 250 } });
+        onProgress(320, true);
+      } else {
+        set({ y: 60, config: { duration: 250 } });
+        onProgress(60, true);
+      }
+      setExpanded(!expanded);
+      return;
+    }
+    if (!down) {
+      if (y >= TOP_THRESHOLD) {
+        set({ y: 320, config: { duration: 250 } });
+        onProgress(320, false);
+        setExpanded(false);
+      } else {
+        set({ y: 60, config: { duration: 250 } });
+        onProgress(60, false);
+        setExpanded(true);
+      }
+      onActive(false);
+    } else {
+      set({ y, config: { duration: 60 } });
+      onActive(true);
+      onProgress(y, false);
+    }
+  },
+  {
+    initial: () => [0, y.get()],
+    bounds: { left: 0, right: 0, top: 60, bottom: 320 },
+    rubberband: true });
+
+
+
+  return (
+    React.createElement(animated.div, _extends({ className: "sheet top-sheet", style: { y } }, bind()),
+    React.createElement("div", { className: "top-sheet-title" }, "My cards"),
+    React.createElement("div", { className: "top-sheet-cards" },
+    React.createElement(MasterCard, null),
+    React.createElement("div", { className: "balance balance-white" },
+    React.createElement("div", { className: "balance-title" }, "Balance"),
+    React.createElement("div", { className: "balance-amount" }, "$8,123")),
+
+    React.createElement(Visa, null),
+    React.createElement("div", { className: "balance" },
+    React.createElement("div", { className: "balance-title" }, "Balance"),
+    React.createElement("div", { className: "balance-amount" }, "$1,727")))));
+
+
+
+
+}
+
+function BottomSheet({ y, set, onActive, onProgress }) {
+  const [expanded, setExpanded] = useState(false);
+  const bind = useDrag(
+  ({ movement: [x, y], down, tap }) => {
+    if (!down && tap) {
+      if (expanded) {
+        set({ y: 400, config: { duration: 250 } });
+        onProgress(400, true);
+      } else {
+        set({ y: 82, config: { duration: 250 } });
+        onProgress(82, true);
+      }
+      setExpanded(!expanded);
+      return;
+    }
+    if (!down) {
+      if (y >= BOTTOM_THRESHOLD) {
+        set({ y: 400, config: { duration: 250 } });
+        onProgress(400, true);
+        setExpanded(false);
+      } else {
+        set({ y: 82, config: { duration: 250 } });
+        onProgress(82, false);
+        setExpanded(true);
+      }
+      onActive(false);
+    } else {
+      set({ y, config: { duration: 60 } });
+      onActive(true);
+      onProgress(y, false);
+    }
+  },
+  {
+    initial: () => [0, y.get()],
+    bounds: { left: 0, right: 0, top: 82, bottom: 400 },
+    rubberband: true });
+
+
+
+  return (
+    React.createElement(animated.div, _extends({ className: "sheet bottom-sheet", style: { y } }, bind()),
+    React.createElement("div", { className: "bottom-sheet-title" }, "Transactions"),
+    React.createElement("ul", { className: "bottom-sheet-list" } ,
+                        
+    React.createElement("li", { className: "bottom-sheet-item" },
+    React.createElement("div", { className: "bottom-sheet-transaction bottom-sheet-transaction-in" },
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "40",
+      height: "40",
+      viewBox: "0 0 40 40" },
+
+    React.createElement("g", {
+      fill: "none",
+      stroke: "#5f965f",
+      strokeWidth: "2",
+      strokeLinecap: "round" },
+
+    React.createElement("path", { d: "M19.207 16l-4 4 4 4M15.207 20h10" })))),
+
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-descr" }, "Johnny here, paying you back the 10 bucks I owe you"),
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-amount" }, "+ $10.00")),
+
+    React.createElement("li", { className: "bottom-sheet-item" },
+    React.createElement("div", { className: "bottom-sheet-transaction bottom-sheet-transaction-out" },
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 40 40",
+      height: "40",
+      width: "40" },
+
+    React.createElement("g", {
+      fill: "none",
+      stroke: "#dc2d2d",
+      strokeWidth: "2",
+      strokeLinecap: "round" },
+
+    React.createElement("path", { d: "M20.793 16l4 4-4 4M24.793 20h-10" })))),
+
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-descr" }, "Barnes & Nobles Booksellers"),
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-amount" }, "- $54.55")),
+
+    React.createElement("li", { className: "bottom-sheet-item" },
+    React.createElement("div", { className: "bottom-sheet-transaction bottom-sheet-transaction-out" },
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 40 40",
+      height: "40",
+      width: "40" },
+
+    React.createElement("g", {
+      fill: "none",
+      stroke: "#dc2d2d",
+      strokeWidth: "2",
+      strokeLinecap: "round" },
+
+    React.createElement("path", { d: "M20.793 16l4 4-4 4M24.793 20h-10" })))),
+
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-descr" }, "Blue Bottle Coffee"),
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-amount" }, "- $27.00")),
+
+    React.createElement("li", { className: "bottom-sheet-item" },
+    React.createElement("div", { className: "bottom-sheet-transaction bottom-sheet-transaction-alert" },
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "40",
+      height: "40",
+      viewBox: "0 0 40 40" },
+
+    React.createElement("ellipse", {
+      cx: "20",
+      cy: "20",
+      rx: "8.064",
+      ry: "8.064",
+      fill: "none",
+      stroke: "#d9413b",
+      strokeWidth: "1.872",
+      strokeLinecap: "round" }),
+
+    React.createElement("path", {
+      d: "M20 15.8V21",
+      fill: "#d9413b",
+      stroke: "#d9413b",
+      strokeWidth: "2",
+      strokeLinecap: "round" }),
+
+    React.createElement("circle", { cx: "20", cy: "24.591", r: "1", fill: "#d9413b" }))),
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-descr" }, "Shady Money Inc"),
+    React.createElement("div", { className: "bottom-sheet-transaction-amount" }, "N/A")),
+
+    React.createElement("li", { className: "bottom-sheet-item" },
+    React.createElement("div", { className: "bottom-sheet-transaction bottom-sheet-transaction-out" },
+    React.createElement("svg", {
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 40 40",
+      height: "40",
+      width: "40" },
+
+    React.createElement("g", {
+      fill: "none",
+      stroke: "#dc2d2d",
+      strokeWidth: "2",
+      strokeLinecap: "round" },
+
+    React.createElement("path", { d: "M20.793 16l4 4-4 4M24.793 20h-10" })))),
+
+
+
+    React.createElement("div", { className: "bottom-sheet-transaction-descr" }, "El Pollo Loco"),
+    React.createElement("div", { className: "bottom-sheet-transaction-amount" }, "- $15.11")))));
+
+
+
+
+}
+
+function App() {
+  const [active, setActive] = useState({ top: false, bottom: false });
+  const [expanded, setExpanded] = useState(false);
+  const [{ y: topY }, topSet] = useSpring(() => ({
+    y: 320,
+    config: {
+      ...config } }));
+
+
+  const [{ y: bottomY }, bottomSet] = useSpring(() => ({
+    y: 400,
+    config: {
+      ...config } }));
+
+
+  const avatarY = () => {
+    return topY.to({
+      range: [136, 240, 320],
+      output: [-104, 0, 0],
+      extrapolate: "clamp" });
+
+  };
+  const avatarScale = () => {
+    return topY.to({
+      range: [60, 136, 320],
+      output: ["scale(0.35)", "scale(1)", "scale(1)"] });
+
+  };
+
+  return (
+    React.createElement("div", { className: "App" },
+    React.createElement("div", { className: "phone" },
+    React.createElement("svg", {
+      xmlns: "",
+      viewBox: "0 0 260 350",
+      height: "350",
+      width: "260",
+      className: "background" },
+
+    
+   
+
+    
+
+    
+
+   React.createElement("rect", {
+      width: "4.789",
+      height: "4.789",
+      x: "123.66",
+      y: "-26.417",
+      ry: "0",
+      transform: "rotate(45)",
+      fill: "none",
+      stroke: "bisque",
+      strokeWidth: "1.211",
+      strokeLinecap: "square" ,
+        visibility:"hidden",
+
+    
+    })),
+
+    
+
+    
+
+
+    React.createElement(animated.img, {
+        
+      className: "avatar",
+      style: { y: avatarY(), transform: avatarScale() } }),
+
+    React.createElement("div", { className: "name" }, "Sonja Marquez"),
+    React.createElement(TopSheet, {
+      y: topY,
+      set: topSet,
+      onActive: topActive => setActive({ ...active, top: topActive }),
+      onProgress: (y, reset) => {
+        if (active.top) {
+          bottomSet({
+            y: 523 - y / 2.6,
+            config: { duration: reset ? 250 : 60 } });
+
+        }
+      } }),
+
+    React.createElement(BottomSheet, {
+      y: bottomY,
+      set: bottomSet,
+      onActive: (bottomActive) =>
+      setActive({ ...active, bottom: bottomActive }),
+
+      onProgress: (y, reset) => {
+        if (active.bottom) {
+          if (reset) {
+            if (y === 400) {
+              topSet({ y: 320, config: { duration: 250 } });
+            } else if (y === 82) {
+              topSet({ y: 60, config: { duration: 250 } });
+            }
+            return;
+          }
+          if (y < 342) {
+            topSet({ y: y - 22, config: { duration: 60 } });
+          }
+        }
+      } }))));
+
+
+
+
+}
+
+ReactDOM.render(
+React.createElement(App, null),
+document.getElementById("root"));
+//# sourceURL=pen.js
+    </script>
+    
+
+
+
+
+
+</body></html>
