@@ -203,16 +203,17 @@ input.file {
 			
 		}
 		.overlay {
- height: 0%;
+  height: 0%;
   width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
 	overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
 			
   transition: 1s;
+            
             
 			
 			
@@ -287,6 +288,7 @@ input.file {
             
             
         }
+        
 	
 		.overlay a {
   padding: 8px;
@@ -557,7 +559,7 @@ input.file {
 		
 		
 		
-		<p>d</p>
+		
 		
 		
 		
@@ -566,7 +568,14 @@ input.file {
 		
 	
 		<script>
-           console.log(document.getElementById("friday1"));
+            /*
+             if(localStorage.miercolesCuartoK !== undefined){
+                 console.log("ok")
+                 //cambia esto cuando termines
+                 window.location.href='http://127.0.0.1:53901/Projects/Escuela/MSCQ2.html'
+             
+//          }
+           */console.log(document.getElementById("friday1"));
             
             
 			
@@ -707,6 +716,7 @@ if (fullPath) {
             
              var miercolesquintoPreVal = document.getElementById("wednesday5");
 			var miercolesquintoPrelocal = miercolesquintoPreVal.value;
+            
             //K
             
             
@@ -898,8 +908,7 @@ if (fullPath) {
             
                 
              closeNav()
-          
-			
+         
          
 	
 		}
@@ -925,347 +934,31 @@ if (fullPath) {
 		  
 			
 			function Start(){
+                if(localStorage.miercolesPrimerK !== undefined){
+                    window.location.href='https://carlosqool.github.io/Scheduel/MSCQ.html'
+                    
+                }else{
+              
+               
                 
-				openNav()
+            
+			
 				
+				 
+                  openNav()   
+                     
+                     
+                     
+                }
+			
 				
 				}
 			
 		
 		
 			
-		var hoy = new Date()
-	     var diaDeSemana = hoy.getDay()
-		 var hora = hoy.getHours
-		 var min = hoy.getMinutes
-		 
-		 
 		
-		 switch (diaDeSemana){
-			 case 0 :
-				 
-				 break;
-			 case 6:
-				 
-				 break;
-			 case 1:
-			  switch (hora){
-				 case 8:
-					 
-					 if(min => 23){
-						 
-					 }
-					 
-					 break;
-				 case 9:
-					 if(min<=29){
-						
-					 }
-					 if(min>=33){
-						
-					 }
-					
-					 
-					 break;
-				 case 10 :
-					 if(min<=38){
-						 
-					 }
-					 if(min>=42){
-						 
-						 
-					 }
-					 
-					 break;
-				 case 11:
-					 if(min<=42){
-						 
-					 }
-					 if(min>=46){
-						 
-					 }
-					 break;
-				 case 12:
-					 if(min<=46){
-						 
-					 }
-					 if(min>=50){
-						
-					 }
-					 
-					 break;
-				 case 13:
-					 if(min<=50){
-						
-					 }
-					 if(min>=55){
-						 
-					 }
-					 break;
-				 case 14:
-				
-					 break
-				 case 15:
-					
-					 break;	 
-			 }
-				 
-			 break;
-				 case 2:
-			  switch (hora){
-				 case 8:
-					 
-					 if(min => 23){
-						 
-					 }
-					 
-					 break;
-				 case 9:
-					 if(min<=29){
-						
-					 }
-					 if(min>=33){
-						
-					 }
-					
-					 
-					 break;
-				 case 10 :
-					 if(min<=38){
-						 
-					 }
-					 if(min>=42){
-						 
-						 
-					 }
-					 
-					 break;
-				 case 11:
-					 if(min<=42){
-						 
-					 }
-					 if(min>=46){
-						 
-					 }
-					 break;
-				 case 12:
-					 if(min<=46){
-						 
-					 }
-					 if(min>=50){
-						
-					 }
-					 
-					 break;
-				 case 13:
-					 if(min<=50){
-						
-					 }
-					 if(min>=55){
-						 
-					 }
-					 break;
-				 case 14:
-				
-					 break
-				 case 15:
-					
-					 break;	 
-			 }
-				 
-			 break;
-				 case 3:
-			  switch (hora){
-				 case 8:
-					 
-					 if(min => 23){
-						 
-					 }
-					 
-					 break;
-				 case 9:
-					 if(min<=29){
-						
-					 }
-					 if(min>=33){
-						
-					 }
-					
-					 
-					 break;
-				 case 10 :
-					 if(min<=38){
-						 
-					 }
-					 if(min>=42){
-						 
-						 
-					 }
-					 
-					 break;
-				 case 11:
-					 if(min<=42){
-						 
-					 }
-					 if(min>=46){
-						 
-					 }
-					 break;
-				 case 12:
-					 if(min<=46){
-						 
-					 }
-					 if(min>=50){
-						
-					 }
-					 
-					 break;
-				 case 13:
-					 if(min<=50){
-						
-					 }
-					 if(min>=55){
-						 
-					 }
-					 break;
-				 case 14:
-				
-					 break
-				 case 15:
-					
-					 break;	 
-			 }
-				 
-			 break;
-				 case 4:
-			  switch (hora){
-				 case 8:
-					 
-					 if(min => 23){
-						 
-					 }
-					 
-					 break;
-				 case 9:
-					 if(min<=29){
-						
-					 }
-					 if(min>=33){
-						
-					 }
-					
-					 
-					 break;
-				 case 10 :
-					 if(min<=38){
-						 
-					 }
-					 if(min>=42){
-						 
-						 
-					 }
-					 
-					 break;
-				 case 11:
-					 if(min<=42){
-						 
-					 }
-					 if(min>=46){
-						 
-					 }
-					 break;
-				 case 12:
-					 if(min<=46){
-						 
-					 }
-					 if(min>=50){
-						
-					 }
-					 
-					 break;
-				 case 13:
-					 if(min<=50){
-						
-					 }
-					 if(min>=55){
-						 
-					 }
-					 break;
-				 case 14:
-				
-					 break
-				 case 15:
-					
-					 break;	 
-			 }
-				 
-			 break;
-				 case 5:
-			  switch (hora){
-				 case 8:
-					 
-					 if(min => 23){
-						 
-					 }
-					 
-					 break;
-				 case 9:
-					 if(min<=29){
-						
-					 }
-					 if(min>=33){
-						
-					 }
-					
-					 
-					 break;
-				 case 10 :
-					 if(min<=38){
-						 
-					 }
-					 if(min>=42){
-						 
-						 
-					 }
-					 
-					 break;
-				 case 11:
-					 if(min<=42){
-						 
-					 }
-					 if(min>=46){
-						 
-					 }
-					 break;
-				 case 12:
-					 if(min<=46){
-						 
-					 }
-					 if(min>=50){
-						
-					 }
-					 
-					 break;
-				 case 13:
-					 if(min<=50){
-						
-					 }
-					 if(min>=55){
-						 
-					 }
-					 break;
-				 case 14:
-				
-					 break
-				 case 15:
-					
-					 break;	 
-			 }
-				 
-			 break;
-			 
-				 
-		 }
+		
 		 
 		</script>
 	</body>
