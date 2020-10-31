@@ -1,0 +1,289 @@
+	<!DOCTYPE html>
+
+<htm>
+<head>
+	
+	
+	
+	
+	
+	<style>
+		.room{
+			
+			 height: 300px;
+  width: 300px;
+		border: 10px solid black;	
+			position: absolute;
+			top: 700px;
+			
+		left: 330px;
+			
+			
+			
+			
+			
+			
+		}
+		@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+		
+		
+			
+			
+			
+		
+	#corner1{
+			
+		 height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+			
+			position: absolute;
+			top: -20px;
+				left: -20px;
+		}
+		
+		
+		#corner2{
+			
+			
+		 height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+			
+			
+			position: absolute;
+			top: 270px;
+				left: -20px;}
+		
+		#corner3{
+			
+			
+		 height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+			
+			
+			
+			position: absolute;
+			top: -20px;
+				left: 270px;
+		
+		
+	}
+		
+		#corner4{
+			
+			
+		 height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+			
+			
+			position: absolute;
+			top: 270px;
+				left: 270px;
+		
+		}
+		#title{
+			
+			position: absolute;
+			
+			
+			top: -50px;
+			
+			left: 230px;
+			
+			font-size: 120px;
+			
+			font-family: Masquero;
+			
+			
+			
+		}
+		@font-face {
+			font-family: Masquero; src: url('Masquero-1GlXB.ttf'); }
+		#arrow{
+			
+			
+			 -webkit-animation: blink .7s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink .7s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink .7s;
+    -o-animation-iteration-count: infinite;
+			
+		}
+	</style>
+	</head>
+
+
+
+
+
+<body>
+	
+	
+	<h1 id="title" >Geo-Notes</h1>
+	
+	<img>
+	
+	
+	<h1 style="position: absolute;top: 200px;left: 300px;font-family:Masquero;font-size: 90px ;color: red">Location</h1>
+	
+	<h1 style="position: absolute;top: 420px;left: 30px;font-family:cursive;font-size: 60px ">Step in the indicated corner of your chosen room.</h1>
+	
+	<img style="position: absolute;top: 720px;left: 340px;-webkit-transform:rotate(50deg);" id = "arrow"width="90px" height="" src="arrow.png">
+	
+	
+	<div class="room" onclick="getLocation()" >
+	
+	<div id="corner1"></div>
+	<div id="corner2"></div>
+		<div id="corner3"></div>
+		<div id="corner4"></div>
+	
+	
+	
+	</div>
+	
+	<script>
+		
+		function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+	  
+	 
+  } else {
+   alert("Geolocation is not supported by this browser.");
+  }
+}
+		
+		var Geocuenta = 0;
+	function showPosition(position)	{
+		Geocuenta ++
+		if(Geocuenta == 1)	{	
+		 var latitude1 = position.coords.latitude;
+	  
+	  var longitude1= position.coords.longitude;
+	  
+	  console.log("latitude1 " +latitude1)
+	  
+	  console.log("longitude1 "+longitude1)
+		document.getElementById("corner1").style.backgroundColor = "black";
+			
+			document.getElementById("arrow").style.top = "910px"
+			document.getElementById("arrow").style.left = "350px"
+			document.getElementById("arrow").style.transform = "rotate(330deg)"
+			
+		}
+		
+			if(Geocuenta == 2)	{	
+		 var latitude2 = position.coords.latitude;
+	  
+	  var longitude2= position.coords.longitude;
+	  
+	  console.log( "latitude2 " +latitude2)
+	  
+	  console.log("longitude2 "+longitude2)
+		document.getElementById("corner2").style.backgroundColor = "black"
+				
+				document.getElementById("arrow").style.top = "720px"
+			document.getElementById("arrow").style.left = "530px"
+			document.getElementById("arrow").style.transform = "rotate(140deg)"
+		}
+		
+			if(Geocuenta == 3)	{	
+		 var latitude3 = position.coords.latitude;
+	  
+	  var longitude3= position.coords.longitude;
+	  
+	  console.log("latitude3 "+latitude3)
+	  
+	  console.log("longitude3 "+longitude3)
+				document.getElementById("corner3").style.backgroundColor = "black"
+				
+				
+				document.getElementById("arrow").style.top = "910px"
+			document.getElementById("arrow").style.left = "530px"
+			document.getElementById("arrow").style.transform = "rotate(230deg)"
+		
+		}
+		
+			if(Geocuenta == 4)	{	
+		 var latitude4 = position.coords.latitude;
+	  
+	  var longitude4= position.coords.longitude;
+	  
+	  console.log("latitude4 "+latitude4)
+	  
+	  console.log("longitude4 "+longitude4)
+				document.getElementById("corner4").style.backgroundColor = "black"
+				document.getElementById("arrow").style.opacity = "0"
+				document.getElementById("arrow").style.animationIterationCount= "0"
+				
+			
+		}
+	}
+		
+		
+	
+	
+	
+	
+	</script>
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</htm>
