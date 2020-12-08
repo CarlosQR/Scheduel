@@ -1,0 +1,131 @@
+	<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+<body>
+<style>
+    body{
+        background-repeat: no-repeat;
+             background-attachment: fixed;
+      background-position: center;
+        
+        
+        
+        background-image: linear-gradient(180deg,gray,white);
+    
+      
+            background-repeat: no-repeat;
+    }   
+      .avatar{
+        
+        
+        border-radius: 50%;
+            
+    margin-top: 120px;
+  
+    width: 800px;
+            height: 800px;
+    user-select: none;
+    -webkit-user-select: none;
+    
+            position: absolute;
+		  
+		  
+		  
+		  
+    left: 100px;
+      top: 240px;      
+    
+            
+           
+        
+        }
+	
+	
+     @font-face {
+			font-family: Cyberway ; src: url( "CyberwayRiders-lg97d.ttf"); }
+       
+    </style>
+    
+    <h1 style=" font-family: Cyberway;font-size: 90px;position: absolute;top: 50px;left: 40px;color: whitesmoke">Click the image to confirm it</h1>
+	
+	<div onclick="SendtoData()">
+		
+		
+	 <span  id= "source"></span>
+    
+	</div>
+	
+	<script>
+    
+    var profileImg = localStorage.getItem("profileImg");
+     console.log(profileImg)
+		
+		
+		 document.getElementById("source").innerHTML = "<img src='" + profileImg + "' class='avatar' id = 'avatar' />" 
+         
+		   var  profileImgInvis = document.getElementById("avatar");
+		
+		function SendtoData(){
+			  var imgAsDataURL;
+           //profileImgInvis.addEventListener("load", function () {
+                
+    var imgCanvas = document.createElement("canvas");
+        
+        
+         var imgContext = 
+        
+        imgCanvas.getContext("2d");
+            
+                console.log(imgContext);
+            
+                imgCanvas.width = profileImgInvis.width;
+    
+                imgCanvas.height = profileImgInvis.height;
+                
+               imgContext.drawImage(profileImgInvis, 0, 0, profileImgInvis.width, profileImgInvis.height);
+
+                     imgAsDataURL = imgCanvas.toDataURL("image/png");
+                     imgAsDataURL = imgCanvas.toDataURL("image/png");
+                
+                
+                
+                try {
+        localStorage.setItem("profile", imgAsDataURL);
+                    
+                    
+               
+                    
+    }
+                
+    catch (e) {
+        console.log("Storage failed: " + e);
+    }
+            
+///}, false); 
+            
+console.log(imgCanvas)
+          console.log(imgAsDataURL) ; 
+            
+            
+           console.log(imgContext); 
+			window.location.href='MSCQ2.html';
+			
+			
+		}
+        
+    
+    
+
+        
+	</script>
+
+
+
+
+</body>
+</html>
+
