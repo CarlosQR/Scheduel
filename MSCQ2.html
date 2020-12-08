@@ -1,0 +1,4070 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <style>
+         @font-face {
+			font-family: Cyberway ; src: url( "CyberwayRiders-lg97d.ttf"); }
+          .Current table{
+              
+              
+              
+              
+          }
+        #myProgress {
+            
+             text-align: right; /* To center it horizontally (if you want) */
+  line-height: 30px;
+            font-size: 25px;
+            color: red;
+            position: absolute;
+            top: 700px;
+            left: 100px;
+  width: 80%;
+            height: 40px;
+  background-color: white;
+            
+}
+        #myBar {
+            
+ 
+              position: absolute;
+           
+            
+  height: 100%;
+  background-color: red;
+             text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px;
+            font-size: 20px;
+            color: white;
+            z-index: 3s
+                
+                
+}
+        .name{
+            
+            color: white;
+            position: absolute;
+            top: 500px;
+            left: 35%;
+            font-size: 
+                80px;
+            backface-visibility: visible;
+          
+            
+        }
+        body{
+          background-color: black;
+            overflow-y: scroll;
+            
+            
+            
+        }      
+        .avatar{
+        
+        
+        border-radius: 50%;
+            
+    margin-top: 120px;
+  
+    width: 400px;
+            height: 400px;
+    user-select: none;
+    -webkit-user-select: none;
+   
+            position: absolute;
+    left: 30%;
+            
+           
+            
+           
+        
+        }
+          
+          .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: firebrick;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+              
+}
+          
+	
+		.Character{
+			color: black;
+            font-size: 100px;
+            position: absolute;
+            top: 20px;
+            left: 240px;
+        }
+          .Start_buttonLogin{
+			position: absolute;
+              top: 1800px;
+              left: 20px;
+              width: 900px;
+              height: 100px;
+              font-size: 80px;
+              font-family: Cyberway;
+              background-color: white;
+              color: red;
+              border-style: solid;
+              border-width: 7px;
+              border-color: black;
+            }
+          .overlay form {
+	
+  padding: 8px;
+  text-decoration: none;
+  font-size: 130px;
+	text-align: center;
+	position: absolute;
+	/*top: 200px;
+	left: 100px;
+*/
+  
+	
+		
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+        
+        .profileLabel{
+            
+          position: absolute;
+            top: 1230px;
+            left:140px ;
+            font-size: 85px;
+            
+            
+            
+            
+        }
+          
+          
+		.Name_Ask{
+			height:50px ;
+            position: absolute;
+            top: 250px;
+            left: 400px;
+			
+		}
+          	.Character{
+			color: black;
+            font-size: 100px;
+            position: absolute;
+            top: 20px;
+            left: 240px;
+        }
+        
+            div.fileinputs {
+	position: absolute;
+             top: 1500px;
+             left: 315px;
+             height: 40px;
+             width: 30px;
+             z-index: 0;
+             
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+        position: absolute;
+            top: 1500px;
+    left: 30px;
+          
+    
+}
+        .profileImg{
+            
+          position: absolute;
+            top: 1300px;
+            left:340px ;  
+           
+            
+            
+            
+            
+        }
+          .class_input{
+			border-style: solid;
+			border-width: 10px;
+			border-color: red;
+          }
+	
+		.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+          
+          
+          
+          
+		
+                
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+     font-size: 96px;
+  margin-left: 50px;
+     padding: 8px 8px 8px 32px;
+  text-decoration: none;
+ 
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+          .menu{
+            
+              
+              
+               display: inline-block;
+  cursor: pointer;
+              position: absolute;
+              top: 30px;
+              
+              
+          }
+         .menu1,.menu2,.menu3{
+            
+              cursor: pointer;
+              width:65px;
+              height:5px;
+              background-color:ghostwhite;
+              margin: 6px 0;
+              transition: 0.4s;
+         
+              
+          
+          
+          }
+          
+          
+     
+          
+          .change .menu1{
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                   
+  transform: rotate(-45deg) translate(-9px, 6px);
+              
+              
+          }
+          .change .menu2{
+              
+              opacity: 0;
+              
+              
+          }
+          .change .menu3{
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+              
+          }
+          .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+              
+              
+
+              
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+ 
+  display: inline-block;
+position: absolute;
+  left: 100px;
+  top: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:brown;
+  width: 330px;
+    height:100px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    position: absolute;
+  left: 100px;
+  top: 30px;
+}
+
+.dropdown-content a {
+  color: black;
+  
+  text-decoration: none;
+  display: block;
+    font-size: 50px;
+   
+    
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+		  
+	.halfnav {
+  height: 1000px;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 1120px;
+  right: 0;
+		bottom: 0px;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.halfnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.halfnav a:hover{
+  color: #f1f1f1;
+}
+
+.halfnav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .halfnav {padding-top: 15px;}
+  .halfnav a {font-size: 18px;}
+}
+		  
+	qr.set({
+    background: 'black',
+    backgroundAlpha: 0.8,
+    foreground: 'blue',
+    foregroundAlpha: 0.8,
+    padding: 25,
+    size: 900
+});	  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+    
+    </style>
+    
+    </head>
+
+   
+<body>
+    
+    
+  
+    
+  <span  id= "source"></span>
+    
+ <div onclick="xChange(this)" class="menu">
+        
+        
+    <div  class="menu1" onclick="openHalfNav()" 
+         onclick="menu()"
+        
+         
+         ></div>
+        
+    <div  class="menu2"  onclick="openHalfNav() "         onclick="menu()"
+        ></div>
+        
+        
+                              
+    <div class="menu3" onclick="openHalfNav()"
+         onclick="menu()"
+         
+        
+         ></div>
+    </div>
+        
+    <div id="halfnav" class="halfnav">
+  
+  <a id="OGsettings1"  style="font-size: 60px;color: red"onclick="openNav() ">Change Info</a>
+    
+  <a id="OGsettings2"  style="font-size: 60px;color: red"onclick="CompareScheduelbtn() ">Compare scheduel</a>
+		
+		 <a id="ShareSetting1"  style="font-size: 60px;color: red;position: absolute;top: 0px;left: 40px;visibility: hidden"onclick="ScanScheduelbtn()  ">Scan scheduel</a>
+		
+		 <a id="ShareSetting2"  style="font-size: 60px;color: red;position: absolute;top: 0px;left: 520px;visibility: hidden"onclick="ShareScheduelbtn()">Share scheduel </a>
+		
+		<!---<a style="font-size: 60px;color: white;position: absolute;tops: 550px;left:230px;visibility: hidden" id="scheduelArraybtn" onclick = "scheduelArraybtn">Copy scheduel link</a>
+---->
+		<h1 style="color: whitesmoke; visibility: hidden;font-size: 54px;position: absolute;top: 170px;left: 40px" id="comparetitle">Share with someone to compare clases</h1>
+	
+<div style="position:  absolute; top: 320px; left: 0px; visibility: hidden;width: 100%;height: 760px;background-color: white"  id="qr-codediv">
+	
+	
+	
+	<canvas  style="width: 600px;position: absolute;top: 40px; left: 180px" id="qr-code"></canvas>
+		
+		</div>
+		
+		
+		
+<div style="width: 500px" id="reader"></div>
+		
+		
+	
+		<div id="container">
+		
+			
+			
+		<canvas  id="qr-canvas"></canvas>
+		
+		
+		<div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+    </div>
+		
+		
+		
+		
+		</div>	
+	
+		
+  
+
+		
+		
+		
+		
+</div>
+    
+    
+    
+    
+    
+    
+    
+		 <div id="myDropdown" class="dropdown-content">
+    <a onclick= "openNav()" >Change settings</a>
+<div style="background-color: snow;"></div>
+  </div>
+
+<div id="mySidenav" class="sidenav">
+    
+    
+    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+    
+    
+     <div class="overlay-content">
+      
+      <h1 style="font-family: Cyberway;" for="name" class="Character" >Your Name:</h1>
+	
+    <form id="nombre">
+  
+		
+  <input class="Name_Ask"  type="text" id="n" name="name" ><br>
+		
+		
+		
+		
+</form>
+		  
+		  
+	
+		  <h1 style="position: absolute;top: 540px;left: 180px;font-size: 90px;font-family: Cyberway">Set your scheduel:</h1>
+	  <form id="scheduel"></form>
+	  <table style="width:100%;position: absolute;top: 800px;font-size: 40px;font-family: Cyberway">
+		  
+		  
+	  <tr>
+		 <th>M</th> 
+		  <th>T</th>
+		  <th onclick="Wok()">W</th>
+		  <th>Th</th>
+		  <th>F</th>
+		 
+		  </tr>
+		
+		  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday1" name="monday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday1" name="tuesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday1" name="wednesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday1" name="thursday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday1" name="friday1" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday2" name="monday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday2" name="tuesday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday2" name="wednesday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday2" name="thursday2" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday2" name="friday2" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday3" name="monday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday3" name="tuesday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday3" name="wednesday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday3" name="thursday3" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday3" name="friday3" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday4" name="monday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday4" name="tuesday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday4" name="wednesday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday4" name="thursday4" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday4" name="friday4" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+		  	  <tr class="class_input">
+		  <th>
+			<input type="text" id="monday5" name="monday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="tuesday5" name="tuesday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="wednesday5" name="wednesday1" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="thursday5" name="thursday5" form="scheduel">  
+			
+			  </th>
+			   <th>
+			<input type="text" id="friday5" name="friday5" form="scheduel">  
+			
+			  </th>
+			 
+		  
+		  
+		  </tr>
+	  
+	  
+	  
+	  
+	  
+	  </table>
+      <h1 class="profileLabel"  style="font-family: Cyberway" >Chosse profile image:</h1>
+     
+
+<div class="fileinputs">
+    
+	<input type="file" id="file" style="width: 500;" class="file" maxlength="40" size="40">
+    
+	<div class="fakefile">
+
+		
+	</div>
+</div>
+	  
+	 
+	
+	  
+	  <button class = "Start_buttonLogin" onclick="startLogIn()">Change</button>
+      
+
+      
+  </div>
+		
+    
+   -
+    
+  
+
+	
+	
+	</div>
+		
+		
+ 
+       <!---<img src="Lava%20background.gif" id="source" class="avatar">
+    --->
+ 
+
+    
+    <div style="text-align: center;align-content: center">
+      <h1 class="name" id="name"></h1>
+    <!--   recuerda deletear el Carlos Q,y quitar los otros comments--> </div>
+    
+ <h1 style="color: red;position: absolute;top: 680px;right: 90px"></h1>
+    
+    <div id="myProgress">
+        
+  <div id="myBar">
+        
+
+        </div>
+        
+</div>
+    
+    <h1 id="timePast" style="color: white;position: absolute;top: 680px;left: 120px"></h1>
+    <h1 id="timeLeft"  style="color: red;position: absolute;top: 680px;right: 120px"></h1>
+
+<div style="width: 400px;height: 400px;position: absolute;top:800px;float: right;left: 50px;" class="Current table">
+
+   <div class="Current CLass">
+        
+    <h1 style="font-size:55px;color: white">Current Class:</h1>
+    
+    </div>
+    
+    <div class="Current CLassEX" style=";width: 280px">
+         <h1 id="currentClass" style="font-size:65px;color: white;text-align: center">   </h1>
+    </div>
+   
+    
+    
+    
+    </div>
+    
+    <div style="position: absolute;top:800px;left: 50%; background-color: brown;width: 10px;height: 300px "></div>
+    
+    
+    <div style="width: 400px;height: 400px;position: absolute;top:800px;right: 0px" class="Current table">
+
+   <div class="NextClass">
+        
+    <h1 style="font-size:55px;color: white">Next Class:</h1>
+    
+    </div>
+    
+    <div class="Next CLassEX" style=";width: 280px">
+         <h1  id="nextClass"style="font-size:65px;color: white;text-align: center">  </h1>
+    </div>
+   
+    
+    
+    
+    </div>
+    
+    
+    
+    
+     <table style="position: absolute;top: 1050px;left:5px;border-collapse: separate;border-spacing: 40px 110px " >
+         
+        <tr style="font-size: 60px; width: ; color: red">
+            <th> </th>
+        <th >M</th>
+            <th>T</th>
+            <th id="miercolesHeader">W</th>
+            <th>Th</th>
+            <th>F</th>
+
+        </tr>
+        <tr style="font-size: 40px;color: whitesmoke;"id="tr">
+            <th style="color: red">1</th>
+            <td  id="lunes1"></td>
+            <td id="martes1"></td>
+            <td id="miercoles1"></td>
+           <td id="jueves1"></td>
+            <td id="viernes1"></td>
+        </tr>
+        <tr style="font-size: 40px;color: whitesmoke; "  id="tr">
+            <th style="color: red">2</th>
+            <td id="lunes2"></td>
+            <td id="martes2"></td>
+            <td id="miercoles2"></td>
+            <td id="jueves2"></td>
+            <td id="viernes2"></td>
+            
+        
+        </tr>
+         <tr style="font-size: 40px ;color: whitesmoke;"   id="tr">
+             <th style="color: red">3</th>
+            <td id="lunes3"></td>
+             <td id="martes3"></td>
+             <td id="miercoles3"></td>
+             <td id="jueves3"></td>
+             <td id="viernes3"></td>
+        
+        </tr>
+         <tr style="font-size: 40px ;color: whitesmoke; "  id="tr">
+             <th style="color: red">4</th>
+            <td id="lunes4"></td>
+             <td id="martes4"></td>
+             <td id="miercoles4"></td>
+             <td id="jueves4"></td>
+             <td id="viernes4"></td>
+        
+        </tr>
+         <tr style="font-size: 40px;color: whitesmoke; "  id="tr">
+             <th style="color: red">5</th>
+            <td id="lunes5"></td>
+             <td id="martes5"></td>
+             <td id="miercoles5"></td>
+             <td id="jueves5"></td>
+             <td id="viernes5"></td>
+        
+        </tr>
+        
+    
+    
+    
+    </table>
+ 
+    
+    
+     
+<script src="qrcode.js"></script>
+
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+	
+	
+	<script src="html5-qrcode.min.js"></script>
+    <script>
+        
+       
+      
+       
+        function openNav() {
+			
+		localStorage.setItem("changed","yes")
+		 window.location.href = "2020 scheduel LS.html"
+			
+		/*	
+			
+			
+  document.getElementById("mySidenav").style.width = "100%";
+			
+*/		
+			
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+        
+        
+     
+     
+   
+        
+        var name = localStorage.getItem("name");
+        var lunes1 = localStorage.getItem("lunesPrimer");
+        var lunes2 = localStorage.getItem("lunesSegundo");
+        var lunes3 = localStorage.getItem("lunesTercero");
+        var lunes4 = localStorage.getItem("lunesCuarto");
+        var lunes5 = localStorage.getItem("lunesQuinto");
+        
+        var martes1 = localStorage.getItem("martesPrimer");
+        var martes2 = localStorage.getItem("martesSegundo");
+        var martes3 = localStorage.getItem("martesTercero");
+        var martes4 = localStorage.getItem("martesCuarto");
+        
+        var martes5 = localStorage.getItem("martesQuinto");
+        
+        var miercoles1 = localStorage.getItem("miercolesPrimer");
+        var miercoles2 = localStorage.getItem("miercolesSegundo");
+        var miercoles3 = localStorage.getItem("miercolesTercero");
+        var miercoles4 = localStorage.getItem("miercolesCuarto");
+        var miercoles5 = localStorage.getItem("miercolesQuinto");
+        
+         var miercoles1K = localStorage.getItem("lunesPrimer");
+        var miercoles2K = localStorage.getItem("lunesSegundo");
+        var miercoles3K = localStorage.getItem("lunesTercero");
+        var miercoles4K = localStorage.getItem("lunesCuarto");
+        var miercoles5K = localStorage.getItem("lunesQuinto");
+        
+        
+         var jueves1 = localStorage.getItem("juevesPrimer");
+         var jueves2 = localStorage.getItem("juevesSegundo");
+        
+        var jueves3 = localStorage.getItem("juevesTercero");
+        
+        
+       
+        
+        
+         var jueves4 = localStorage.getItem("juevesCuarto");
+         var jueves5 = localStorage.getItem("juevesQuinto");
+        
+         var viernes1 = localStorage.getItem("veiernesPrimer");
+        
+        
+        var viernes2 = localStorage.getItem("viernesSegundo");
+        
+        var viernes3 = localStorage.getItem("viernesTercero");
+        
+        
+        console.log(localStorage.getItem("viernesTercero"));
+        
+        
+        var viernes4 = localStorage.getItem("viernesCuarto");
+        var viernes5 = localStorage.getItem("viernesQuinto");
+        
+     var profileImg = localStorage.getItem("profile");
+        
+       console.log(profileImg);
+        
+        document.getElementById("source").url = profileImg
+        document.getElementById("source").innerHTML = "<img src='" + profileImg + "' class='avatar' />" 
+         document.getElementById("name").innerHTML = name;
+        
+       
+        document.getElementById("lunes1").innerHTML = lunes1
+         document.getElementById("lunes2").innerHTML = lunes2
+         document.getElementById("lunes3").innerHTML = lunes3
+         document.getElementById("lunes4").innerHTML = lunes4
+         document.getElementById("lunes5").innerHTML = lunes5
+        
+         document.getElementById("martes1").innerHTML = martes1
+        document.getElementById("martes2").innerHTML = martes2
+        document.getElementById("martes3").innerHTML = martes3
+        document.getElementById("martes4").innerHTML = martes4
+        document.getElementById("martes5").innerHTML = martes5
+        
+       ;
+         document.getElementById("jueves1").innerHTML = jueves1
+        document.getElementById("jueves2").innerHTML = jueves2
+        
+        document.getElementById("jueves3").innerHTML = jueves3
+        console.log(jueves3);
+        console.log(document.getElementById("jueves3"));
+        document.getElementById("jueves4").innerHTML = jueves4
+        document.getElementById("jueves5").innerHTML = jueves5
+        
+        
+        document.getElementById("viernes1").innerHTML = viernes1
+         document.getElementById("viernes2").innerHTML = viernes2
+         document.getElementById("viernes3").innerHTML = viernes3
+         document.getElementById("viernes4").innerHTML = viernes4
+         document.getElementById("viernes5").innerHTML = viernes5
+        
+        
+        
+       
+     console.log( document.getElementById("viernes1"))
+        
+        console.log(viernes1)
+        
+    
+	</script>   
+    
+    	<script>
+			
+            function xChange(x){
+                
+                
+                
+                x.classList.toggle("change");
+				
+				
+            }
+			
+			 var countNav = 0
+			
+           function openHalfNav() {
+			  
+				countNav ++;
+			   console.log(countNav)
+			   
+			   if(countNav %2 === 0){
+				   
+				   
+				   
+				   
+				    document.getElementById("halfnav").style.width = "0%";
+				
+				   
+			   }
+			   else{
+				   
+				 
+  document.getElementById("halfnav").style.width = "100%";
+				
+				   
+				   
+			   }
+			   
+			 document.getElementById("OGsettings1").style.visibility = "visible";
+			   document.getElementById("OGsettings2").style.visibility = "visible";
+			   
+			   document.getElementById("ShareSetting1").style.visibility = "hidden";
+			   document.getElementById("ShareSetting2").style.visibility = "hidden";
+			   
+			    document.getElementById("comparetitle").style.visibility = "hidden";
+			   
+			   
+			    document.getElementById("qr-code").style.visibility = "hidden";
+			    
+			   
+			   document.getElementById("qr-codediv").style.visibility = "hidden";
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			 
+			   
+			   
+			   
+			   }
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+		   
+			   
+			  		   
+			   
+
+function closeHalfNav() {
+  document.getElementById("halfnav").style.width = "0";
+} 
+            
+            
+            
+            var currentClass;
+            var nextClass;
+            var progress;
+            var timeLeft;
+            var timePast;
+            
+            
+            
+		var hoy = new Date();
+        
+      
+                 var diaDeSemana = 
+                     1
+                 //hoy.getDay();
+		 var hora = hoy.getHours()
+      //  8 
+         ;
+		 var min =
+           hoy.getMinutes()
+         
+      //   21 
+       ;
+         var start;
+
+            
+          
+                             
+                           
+            
+            var current = 
+                
+               hoy.getTime()
+            
+          /// 1599481260000;
+            
+            ;
+            var end;
+	var week = Math.floor(((current - 1597550400000)/	
+(1000 * 3600*24))/7);
+            
+            var WoK;
+            
+            
+    if((week/2) == 0){
+        
+        Wok = "W"
+        
+        
+        
+        
+    }
+            else{
+                
+                Wok = "K"
+                
+                
+                
+                
+                
+                
+                
+            }
+            
+            
+            if(Wok == "W"){
+            document.getElementById("miercoles1").innerHTML = miercoles1
+        
+         document.getElementById("miercoles2").innerHTML = miercoles2
+         document.getElementById("miercoles3").innerHTML = miercoles3
+         document.getElementById("miercoles4").innerHTML = miercoles4
+         document.getElementById("miercoles5").innerHTML = miercoles5
+                
+                 document.getElementById("miercolesHeader").innerHTML = "W"
+            }
+            else{
+                
+                
+                document.getElementById("miercolesHeader").innerHTML = "K"
+                 document.getElementById("miercoles1").innerHTML = miercoles1K
+        
+         document.getElementById("miercoles2").innerHTML = miercoles2K
+         document.getElementById("miercoles3").innerHTML = miercoles3K
+         document.getElementById("miercoles4").innerHTML = miercoles4K
+         document.getElementById("miercoles5").innerHTML = miercoles5K
+                
+                
+                
+                
+                
+                
+                
+            }
+            
+      console.log(week)
+            
+		 if(hora>=15){
+             
+               
+                prog = 0
+                timeLeft ="0"
+                timePast="0"
+                currentClass ="Class ended"
+                nextClass ="Class ended"
+         }
+            
+            console.log(diaDeSemana)
+            
+		 switch (diaDeSemana){
+			 case 0 :
+				 currentClass = "No class!"
+                 nextClass = "No class!"
+                 progress = 0
+				 break;
+			 case 6:
+				  currentClass = "No class!"
+                 nextClass = "No class!"
+                 progress = 0
+				 break;
+                 
+                 
+                 default : 
+                      console.log("WOLKEDS")
+                
+                
+			 switch (hora){
+                     
+                    
+				 case 8:
+                     
+					 if(min<=18){
+						
+                         
+					 }
+                     
+					 if(min >= 19){
+                       
+                      
+                
+                     
+					
+                         
+                         
+                
+                         var  startPrePrePre =
+                       
+                           new Date();
+                         
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                         // 1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                       // 22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 19) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                           //  1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                             // current + 1000 
+                             currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(72* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                             timeLeft = 72- timePast;
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);					 }
+					 
+					 break;
+                
+				 case 9:
+                     
+                  
+                     
+					 if(min<=30){
+                         
+                         
+                
+                       var  startPrePrePre =
+                       
+                           new Date();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                       //   1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 41) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                            new Date();
+                             
+                           //  current = 
+                              current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(72* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                             
+                                
+                             timeLeft = 72- timePast;
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                      
+                
+                       
+                        
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=34){
+                      
+                         
+                
+                    
+                       var  startPrePrePre =
+                       
+                           new Date();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                          //1599481260000
+                
+                       
+                       ;
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                         
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 34) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                              //current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(66* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                               
+                             timeLeft = 67 - timePast;
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                         
+                         
+                         
+                      
+					 }
+					
+					 
+					 break;
+				 case 10 :
+                     
+					 if(min<=39){
+                         
+						
+                         
+                
+                    
+                       var  startPrePrePre =
+                       
+                           new Date();
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                         
+                         // 1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                     //   22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 26) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                             // current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(66* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                             
+                                
+                             timeLeft = 66- timePast;
+							 
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                         
+                         
+					 }
+					 if(min>=43){
+                         
+                         
+                         
+              
+                         
+                
+                      var  startPrePrePre =
+                       
+                           new Date();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                          //1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                        startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 43) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                           //  1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                             // current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(61* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+
+                             timeLeft = 61- timePast;
+                              
+						
+							 
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                         
+                         
+                         
+                       
+					 }
+					 
+					 break;
+                 case 11:
+                     
+                     if(min<=43){
+						
+                            var  startPrePrePre =
+                       
+                           new Date();
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                          //1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 17) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                          new Date();
+                             
+                             current = 
+                             /// current + 1000 
+                             currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(61* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/61)*100;
+                             
+							  
+                             timeLeft = 61- timePast;
+                                                        
+                             
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+					 }    
+                     if(min>=47){
+						
+                         
+                
+                        var  startPrePrePre =
+                       
+                           new Date();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                         // 1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                       // 22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 47) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                             //1599481260000
+                               
+                            new Date();
+                             
+                             current = 
+                            //  current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(61* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                               
+                             timeLeft = 61- timePast;
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                         
+                         
+
+					 }
+                     
+                     
+				 case 12:
+					 if(min<=47){
+					
+                         
+                
+                         var  startPrePrePre =
+                       
+                           new Date();
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                          //1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 13) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                             //1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                            //  current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(61* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                               
+                             timeLeft = 61- timePast;
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                         
+                     }
+                      
+					 if(min>=51){   
+                         
+                         
+                         
+                         var  startPrePrePre =
+                       
+                           new Date();
+                                   var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                       ///   1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 51) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+							 
+							 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                          new Date();
+                             
+                             current = 
+                             // current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(61* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                          
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+							 
+                               timeLeft = 61-timePast
+                                                        
+                             
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                     
+                     }
+                      
+                     
+					 break;
+                 case 13:
+                       if(min<=51){
+                           
+                           
+                           console.log( "hora : " + 1)
+                         var  startPrePrePre =
+                       
+                           new Date();
+                                   var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                       ///   1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                      //  22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 9) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                            // 1599481260000
+                               
+                          new Date();
+                             
+                             current = 
+                             // current + 1000 
+                               currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end =
+                                 Math.floor(start +(61* 60000));
+                             
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                  
+                             timeLeft = 61- timePast;           
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                     
+                     
+                       }
+                     if(min>= 55){
+                         
+                           {
+                     
+					
+                         
+                         
+                
+                         var  startPrePrePre =
+                       
+                           new Date();
+                         
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                         // 1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                       // 22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow - 55) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                           //  1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                             // current + 1000 
+                             currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(66* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                             
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                     }
+                    
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                     }
+                     
+                     
+				 case 14:
+                     {
+                     
+					
+                         
+                         
+                
+                         var  startPrePrePre =
+                       
+                           new Date();
+                         
+                           var secNow = 
+                             startPrePrePre.getSeconds();
+                       
+                       var startPrePre = 
+                          
+                           startPrePrePre.getTime();
+                         
+                         // 1599481260000
+                
+                       
+                       ;
+                       //esto es los milisegundos de cuando habriste el app
+                          
+                        var minNow = 
+                           startPrePrePre.getMinutes();
+                         
+                       // 22
+                         
+                         ;
+                         
+                        
+                         
+                         var startPre = 
+                             (Math.abs(minNow + 5 ) ) *60000;
+                         
+                     console.log("Start Pre:"+startPre)
+                         
+                         //Start Pre es cuantos milisegundos hay entre cuando empezo la clase y la hora de ahora mismo
+                         
+                         start = startPrePre - startPre;
+                         
+                         console.log("Start : "+start)
+                         
+                         //Si restamos donde estamos ahora menos cuanto tiempo ha pasado desde que empezo la clase nos da el empiezo de la clase.Esto cambia pq estamos contando cuantos milisegundos han pasado desde que se creo javascript
+                         
+                         console.log("Start Pre PRe "+ startPrePre)
+                         var example =0
+                         var exampleMin = 0;
+                         var loop = setInterval(function(){ 
+                             
+                              console.log("-----------------------------------------------")   
+                                example = 
+                                 (example +1);
+                             exampleMin = ( exampleMin +1);
+                                
+                 
+                            console.log("sec "+ exampleMin)
+                             
+                             console.log("minutes "+ Math.floor(example/60) )
+                             
+                             
+                                         
+                
+                                            
+                          
+                          //saca cuando no sea simulation 
+                            secNow = secNow + 1;
+                                 
+                                 
+                                
+                             
+                             
+                            
+                                
+                             //Aqui esta el problema no se como cambiar current
+                           var  currentPRE = 
+                           //  1599481260000
+                               
+                           new Date();
+                             
+                             current = 
+                             // current + 1000 
+                             currentPRE.getTime();
+                             
+                           //Lo de current + 1000 es pq cuando hacemos test el currentPRe no cambie(si fuese new Date() no tuviesemos que tener el + 100 ) P.s:when not testing eliminate the curent + 100 and replace with currentPRE.getTime();
+                             
+                             
+                             timePast = Math.floor((current - start)/60000) + (secNow/60)
+                            
+                             console.log(secNow/60)
+                             
+                             
+                             end = Math.floor(start +(66* 60000));
+                             console.log(end)
+                             
+                           timeLeft = 
+                               
+                           (end -current)/ 60000 
+                             
+                             
+                             timeLeft = Math.floor(timeLeft) + (secNow/60)  ;
+                             
+                            
+                             
+                             
+                             
+                             var timePastMs = timePast * 60000;
+                             
+                             
+                             
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                                                        
+                             timeLeft = 66- timePast;
+                              
+                            console.log("Start " + start)
+                             console.log("minute when loop started"+ minNow)
+                             
+                             console.log("end " + end) 
+                             
+                             console.log("currnet" + current)
+                             
+                             console.log("time left" + timeLeft)
+                             
+                             console.log("time past"+ timePast)
+                             progress = ((timePastMs/60000)/66)*100;
+                             
+                            if(exampleMin == 59){
+                                
+                                exampleMin = 0
+                                
+                                
+                                
+                            }
+                             
+                             
+                             
+                             if(timeLeft == 0){
+                                 
+                              clearInterval(loop)
+                                 
+                                 
+                             }
+                             
+                             ; }, 1000);
+                     }
+                     
+					 break;
+				 case 15:
+                     
+                     
+					
+                         
+                    
+                     
+					 break;	 
+			 }
+                 
+                 
+                 
+         }
+            
+            
+            switch(diaDeSemana){
+            
+			 case 1:
+              
+                   switch (hora){
+				 case 8: 
+					 if(min<=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = lunes1
+                         
+					 }
+					 if( min >= 19){
+						currentClass = lunes1
+                         nextClass = lunes2
+                       
+                        
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=30){
+                         currentClass = lunes1
+                         nextClass = lunes2
+                         
+                         
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=34){
+						currentClass = lunes2
+                         nextClass = lunes3
+                         
+                       
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=39){
+						currentClass = lunes2
+                         nextClass = lunes3
+                         
+					 }
+					 if(min>=43){
+						 currentClass = lunes3
+                         nextClass = "Lunch"
+                         
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=43){
+						currentClass = martes3
+                         nextClass = "Lunch"
+                         
+					 }
+					 if(min>=47){
+						currentClass = "Lunch"
+                         nextClass = lunes4
+                         
+					 }
+					 break;
+				 case 12:
+					 if(min<=47){
+						currentClass = "Lunch"
+                         nextClass = lunes4
+                         
+					 }
+					 if(min>=51){
+						currentClass = lunes4
+                         nextClass = lunes5
+                         
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=51){
+                         
+						currentClass = lunes4
+                         nextClass = lunes5
+                         
+					 }
+					 if(min>=55){
+						currentClass = lunes5
+                         nextClass = "No class!"
+                         
+					 }
+					 break;
+				 case 14:
+					currentClass = martes5
+                         nextClass = "No class!"
+                         
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                         
+					 break;	 
+			 }
+            
+            
+			 break;
+                 
+                 
+			 case 2:
+			   switch (hora){
+				 case 8: 
+					 if(min<=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = martes1
+                         
+					 }
+					 if( min => 19){
+						currentClass = martes1
+                         nextClass = martes2
+                       
+                        
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=30){
+                         currentClass = martes1
+                         nextClass = martes2
+                         
+                         
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=43){
+						currentClass = martes2
+                         nextClass = martes3
+                         
+                       
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						currentClass = martes2
+                         nextClass = martes3
+                         
+					 }
+					 if(min>=39){
+						 currentClass = martes3
+                         nextClass = "Lunch"
+                         
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						currentClass = martes3
+                         nextClass = "Lunch"
+                         
+					 }
+					 if(min>=43){
+						currentClass = "Lunch"
+                         nextClass = martes4
+                         
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						currentClass = "Lunch"
+                         nextClass = martes4
+                         
+					 }
+					 if(min>=47){
+						currentClass = martes4
+                         nextClass = martes5
+                         
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						currentClass = martes4
+                         nextClass = martes5
+                         
+					 }
+					 if(min>=51){
+						currentClass = martes5
+                         nextClass = "No class!"
+                         
+					 }
+					 break;
+				 case 14:
+					currentClass = martes5
+                         nextClass = "No class!"
+                         
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                         
+					 break;	 
+			 }
+                 
+			 break;
+                 
+			 case 3 :
+                 
+                 if(Wok == "K"){
+                     
+                     
+				switch (hora){
+                        
+				 case 8:
+                        
+					 if(min<=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = miercoles1K
+					 }
+					 if(min => 19){
+						currentClass = miercoles1K
+                         nextClass = miercoles2K
+                      
+                        
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=30){
+                         currentClass = miercoles1K
+                         nextClass = miercoles2K
+                         
+                         
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=43){
+						currentClass = miercoles2K
+                         nextClass = miercoles3K
+                         
+                      
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						currentClass = miercoles2K
+                         nextClass = miercoles3K
+                        
+					 }
+					 if(min>=39){
+						 currentClass = miercoles3K
+                         nextClass = "Lunch"
+                       
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						currentClass = miercoles3K
+                         nextClass = "Lunch"
+                        
+					 }
+					 if(min>=43){
+						currentClass = "Lunch"
+                         nextClass = miercoles4K
+                         
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						currentClass = "Lunch"
+                         nextClass = miercoles4K
+                         
+					 }
+					 if(min>=47){
+						currentClass = miercoles4K
+                         nextClass = miercoles5K
+                         
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						currentClass = miercoles4K
+                         nextClass = miercoles5K
+                         
+					 }
+					 if(min>=51){
+						currentClass = miercoles5K
+                         nextClass = "No class!"
+                         
+					 }
+					 break;
+				 case 14:
+					currentClass = miercoles5K
+                         nextClass = "No class!"
+                        
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                        
+					 break;	 
+			 }
+                 }
+                     if(Wok == "W"){
+				switch (hora){
+                        
+				 case 8:
+                        
+					 if(min<=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = miercoles1
+                         
+					 }
+					 if(min => 19){
+						currentClass = miercoles1
+                         nextClass = miercoles2
+                        
+                        
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=30){
+                         currentClass = miercoles1
+                         nextClass = miercoles2
+                         
+                         
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=43){
+						currentClass = miercoles2
+                         nextClass = miercoles3
+                         
+                         
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						currentClass = miercoles2
+                         nextClass = miercoles3
+                        
+					 }
+					 if(min>=39){
+						 currentClass = miercoles3
+                         nextClass = "Lunch"
+                         
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						currentClass = miercoles3
+                         nextClass = "Lunch"
+                         
+					 }
+					 if(min>=43){
+						currentClass = "Lunch"
+                         nextClass = miercoles4
+                        
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						currentClass = "Lunch"
+                         nextClass = miercoles4
+                       
+					 }
+					 if(min>=47){
+						currentClass = miercoles4
+                         nextClass = miercoles5
+                         
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						currentClass = miercoles4
+                         nextClass = miercoles5
+                         
+					 }
+					 if(min>=51){
+						currentClass = miercoles5
+                         nextClass = "No class!"
+                         
+					 }
+					 break;
+				 case 14:
+					currentClass = miercoles5
+                         nextClass = "No class!"
+                         
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                         
+					 break;	 
+			 }
+                 }
+			 
+			 break;
+			 case 4 :
+                 
+			 switch (hora){
+                     
+				 case 8:
+					 if(min<=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = jueves1
+                         
+					 }
+					 if(min => 19){
+						currentClass =jueves1
+                         nextClass = jueves2
+                      
+                        
+					 }
+					 
+					 break;
+				 case 9:
+					 if(min<=30){
+                         currentClass = jueves1
+                         nextClass = jueves2
+                         
+                         
+                         
+                         
+                         
+						 
+					 }
+					 if(min>=43){
+						currentClass = jueves2
+                         nextClass = jueves3
+                         
+                         
+					 }
+					
+					 
+					 break;
+				 case 10 :
+					 if(min<=38){
+						currentClass = jueves2
+                         nextClass = jueves3
+                        
+					 }
+					 if(min>=39){
+                         
+						currentClass = jueves3;
+                         
+                         nextClass = "Lunch";
+                         
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						currentClass = jueves3
+                         nextClass = "Lunch"
+                         
+					 }
+					 if(min>=43){
+						currentClass = "Lunch"
+                         nextClass = jueves4
+                        
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						currentClass = "Lunch"
+                         nextClass = jueves4
+                         
+					 }
+					 if(min>=47){
+						currentClass = jueves4
+                         nextClass = jueves5
+                       
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						currentClass = jueves4
+                         nextClass = jueves5
+                         
+					 }
+					 if(min>=51){
+						currentClass = jueves5
+                         nextClass = "No class!"
+                         
+					 }
+					 break;
+				 case 14:
+					currentClass = jueves5
+                         nextClass = "No class!"
+                         
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                         
+					 break;	 
+			 }
+                 
+			 break;
+			 case 5 :
+                 
+		switch (hora){
+                
+				 case 8:
+                
+                
+					 if ( min <=18){
+						 currentClass = "Sleep Time!"
+                         nextClass = viernes1
+                         
+					 }
+                
+                      
+					 if(min >= 19){
+                         
+						currentClass = viernes1;
+                         nextClass = viernes2;
+                        
+                        
+					 }
+					 
+					 break;
+                
+				 case 9:
+                
+					 if(min>=30){
+                      
+                         
+                         
+                        	currentClass = viernes1;
+                         
+                         nextClass = viernes2
+                         
+                     
+                
+                 
+                         
+                         
+                     }
+					 
+					 if(min =>43){
+                         
+						currentClass = viernes2;
+                         nextClass = viernes3
+                         
+                         
+					 }
+					
+					 
+					 break;
+                     
+                 
+				 case 10 :
+					 if(min<=38){
+						currentClass = viernes2
+                         nextClass = viernes3
+                         
+					 }
+					 if(min>=39){
+						 currentClass = viernes3
+                         nextClass = "Lunch"
+                       
+						 
+					 }
+					 
+					 break;
+				 case 11:
+					 if(min<=42){
+						currentClass = viernes3
+                         nextClass = "Lunch"
+                         
+					 }
+					 if(min>=43){
+						currentClass = "Lunch"
+                         nextClass = viernes4
+                         
+					 }
+					 break;
+				 case 12:
+					 if(min<=46){
+						currentClass = "Lunch"
+                         nextClass = viernes4
+                         
+					 }
+					 if(min>=47){
+						currentClass = viernes4
+                         nextClass = viernes5
+                         
+					 }
+					 
+					 break;
+				 case 13:
+					 if(min<=50){
+						currentClass = viernes4
+                         nextClass = viernes5
+                         
+					 }
+					 if(min>=51){
+						currentClass =viernes5
+                         nextClass = "No class!"
+                                
+					 }
+					 break;
+				 case 14:
+					currentClass = viernes5
+                         nextClass = "No class!"
+                         
+					 break
+				 case 15:
+					currentClass = "No class!"
+                         nextClass = "No class!"
+                         
+					 break;	 
+			 }
+                    break;
+            }
+         
+    
+            var bar;
+            var prog;
+            setInterval(function(){  
+                
+                 bar = document.getElementById("timePast");
+                
+                var timePastH1 = document.getElementById("timePast");
+          
+            var bar2 = document.getElementById("myBar");
+                
+            bar2.style.width = progress + "%";
+                
+                prog = document.getElementById("timeLeft");
+                
+                
+               
+                if(timePast<10){
+                    
+                    
+                    
+             
+          
+                    timePastH1.style.top = "630px";
+                    
+                    
+                    bar.innerHTML = Math.floor(timePast) + "min";
+                    
+                     prog.style.top = " 630px"
+                    
+                  
+                    
+                    
+                }
+                
+                if(timePast>=10){
+                    
+                bar.innerHTML = Math.floor(timePast) + "min";
+                    
+                    timePastH1.style.top = "680px";
+                    
+                    prog.style.top = " 680px";
+                    
+                }
+                
+                if(timeLeft<=10){
+                    
+                bar.innerHTML = Math.floor(timePast) + "min";
+                    
+                    timePastH1.style.top = "630px";
+                    
+                    prog.style.top = " 630px";
+                    
+                     prog.innerHTML = Math.floor(timeLeft) + "min";
+                   
+                    
+                }
+                
+                
+                
+                if(timeLeft >=10) { 
+                    
+                      
+                    
+                    prog.innerHTML = Math.floor(timeLeft) + "min";
+                    
+                    
+                    
+                }
+                                if(timeLeft <10){
+                    
+                    prog.innerHTML = Math.floor(timeLeft) + "min";
+                    
+                                    
+                    
+                }
+                
+                document.getElementById("currentClass").innerHTML = currentClass
+                document.getElementById("nextClass").innerHTML = nextClass
+                
+                
+                              
+                                
+                                   
+	}, 1000)
+         
+            
+            ;
+
+           console.log("timepo" + hora + ":" + min)
+            console.log("Start " + start)
+            console.log("end "+ end)
+
+            console.log("time left "+ timeLeft)
+            
+            console.log("time past " + timePast)
+            
+ 
+        
+           /// document.getElementById("menu").style.display = "block";
+            
+        
+               
+    
+     
+            
+          window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+      
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains( "show")) {
+          
+document.getElementById('menu1').classList.remove('show');
+          document.getElementById('menu2').classList.remove('show');
+          document.getElementById('menu3').classList.remove('show'); 
+          
+      }
+        
+    }
+  }    
+           
+           
+           
+           
+           
+       }    
+  
+       
+            
+  
+            
+            
+            
+            
+            
+// Close the dropdown if the user clicks outside of it
+            
+            
+            
+                        function menu(){
+                        
+                        menu = 
+                            document.getElementById("menu");
+                       if(menu.style.display == "none"){
+                          
+                          menu.style.display = "block";
+                           
+                       }else
+					   {
+                           
+                           
+                           
+                           menu.style.display = "none";
+                       }
+                          
+                          
+                          }
+			
+			
+			
+			
+			
+			  var scheduel = [];
+			scheduel[0]= lunes1
+			scheduel[1]=martes1
+			scheduel[2]=miercoles1
+			scheduel[3]=jueves1
+			scheduel[4]=viernes1
+			scheduel[5]=lunes2
+			scheduel[6]=martes2
+			scheduel[7]=miercoles2
+			scheduel[8]=jueves2
+			scheduel[9]=viernes2
+			scheduel[10]=lunes3
+			scheduel[11]=martes3
+			scheduel[12]=miercoles3
+			scheduel[13]=jueves3
+			scheduel[14]=viernes3
+			scheduel[15]=lunes4
+			scheduel[16]=martes4
+			scheduel[17]=miercoles4
+			scheduel[18]=jueves4
+			scheduel[19]=viernes4
+			scheduel[20]=lunes5
+			scheduel[21]=martes5
+			scheduel[22]=miercoles5
+			scheduel[23]=jueves5
+			scheduel[24]=viernes5
+		
+			 var scheduelstr = scheduel.toString();
+	
+			
+			var scheduelAry = scheduelstr.split(",",25)
+			
+	
+						
+			var p2scheduelstr; 
+		var ps2scheduelAry; 
+			
+					
+					
+			
+				function CompareScheduel(){
+		
+		p2scheduelstr = outputData;
+		ps2scheduelAry = p2scheduelstr.split(",",25)
+	
+					
+					
+				
+					
+					console.log(ps2scheduelAry)
+					
+					
+					
+	                var	scheduelCompare0 
+			 = ps2scheduelAry[0] == scheduelAry[0];
+					
+					var	 scheduelCompare1 
+			= ps2scheduelAry[1] == scheduelAry[1];
+					
+					var	scheduelCompare2 
+			= ps2scheduelAry[2] == scheduelAry[2];
+					
+					var	scheduelCompare3 
+			= ps2scheduelAry[3] == scheduelAry[3];
+					
+					var	scheduelCompare4 
+			= ps2scheduelAry[4] == scheduelAry[4];
+					
+					var	scheduelCompare5
+			= ps2scheduelAry[5] == scheduelAry[5];
+					
+					var	scheduelCompare6 
+			= ps2scheduelAry[6] == scheduelAry[6];
+					
+					var	scheduelCompare7 
+			= ps2scheduelAry[7] == scheduelAry[7];
+			
+					var	scheduelCompare8
+			= ps2scheduelAry[8] == scheduelAry[8];
+					
+					var	scheduelCompare9 
+			= ps2scheduelAry[9] == scheduelAry[9];
+					
+					var	scheduelCompare10 
+			= ps2scheduelAry[10] == scheduelAry[10];
+					
+					var	scheduelCompare11
+			= ps2scheduelAry[11] == scheduelAry[11];
+					
+					var	scheduelCompare12 
+			= ps2scheduelAry[12] == scheduelAry[12];
+					
+					var	scheduelCompare13 
+			= ps2scheduelAry[13] == scheduelAry[13];
+					
+					var	scheduelCompare14 
+			= ps2scheduelAry[14] == scheduelAry[14];
+					
+					var	scheduelCompare15 
+			= ps2scheduelAry[15] == scheduelAry[15];
+					
+					var	scheduelCompare16 
+			= ps2scheduelAry[16] == scheduelAry[16];
+					
+				var	scheduelCompare17 
+			= ps2scheduelAry[17] == scheduelAry[17];
+					
+				var	scheduelCompare18 
+			= ps2scheduelAry[18] == scheduelAry[18];
+					
+				var	scheduelCompare19
+			= ps2scheduelAry[19] == scheduelAry[19];
+					
+				var	scheduelCompare20
+			= ps2scheduelAry[20] == scheduelAry[20];
+					
+				var	scheduelCompare21
+			= ps2scheduelAry[21] == scheduelAry[21];
+					
+				var	scheduelCompare22 
+			= ps2scheduelAry[22] == scheduelAry[22];
+					
+				var	scheduelCompare23 
+			= ps2scheduelAry[23] == scheduelAry[23];
+					
+				var	scheduelCompare24 
+			= ps2scheduelAry[24] == scheduelAry[24];
+					
+				}
+		
+ function CompareScheduelbtn(){
+	 
+	document.getElementById("OGsettings1").style.visibility = "hidden";
+	 
+	 document.getElementById("ShareSetting1").style.visibility = "visible";
+	 document.getElementById("ShareSetting2").style.visibility = "visible";
+	 
+	 document.getElementById("OGsettings2").style.visibility = "hidden"
+	  
+	 
+	 
+	
+	 
+	 
+	 
+ }
+			
+			
+		function	ShareScheduelbtn(){
+			
+			document.getElementById("ShareSetting1").style.visibility = "hidden"
+	 document.getElementById("ShareSetting2").style.visibility = "hidden"
+			document.getElementById("qr-code").style.visibility = "visible";
+			
+			document.getElementById("comparetitle").style.visibility = "visible";
+			
+			document.getElementById("qr-codediv").style.visibility = "visible";
+			
+			
+			
+			
+		}
+			
+		function ScanScheduelbtn(){
+			
+			console.log("pl")
+			document.getElementById("qr-canvas").style.visibility = "visible"
+			
+			document.getElementById("reader").style.visibility = "visible"
+			
+			
+			
+		}	
+			hasDuplicates(scheduelAry)		
+
+			function hasDuplicates(array) {
+    var valuesSoFar = Object.create(null);
+    for (var i = 0; i < array.length; ++i) {
+        var value = array[i];
+        if (value in valuesSoFar) {
+            return true;
+        }
+        valuesSoFar[value] = true;
+    }
+    return false;
+}
+			
+		
+	</script>
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
+	</script> 
+	
+	<script src="qrCodeScanner.js"></script>
+	
+	
+
+	<script>
+	
+		var qr;
+			(function() {
+                    qr = new QRious({
+                    element: document.getElementById('qr-code'),
+                    size: 200,
+                    value: scheduelstr
+                });
+            })();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	</body>
+
+    
+</html>
