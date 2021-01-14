@@ -813,7 +813,9 @@ if (fullPath) {
            
             
             console.log(filename);
-        
+         filename = document.getElementById("imagen").src;
+			
+			
              
             
          
@@ -1076,6 +1078,25 @@ if (fullPath) {
 		
 		 
 		</script>
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		
+	<script>
+
+
+	
+	$('#file').change( function(event) {
+    $("img").fadeIn("fast").attr('src',URL.createObjectURL(event.target.files[0]));
+});
+	
+		
+		
+		
+		
+		
+	</script>
+	
 	</body>
 
 </html>
